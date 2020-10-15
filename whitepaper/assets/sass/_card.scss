@@ -1,0 +1,96 @@
+.card-list {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint(1024px) {
+		max-width: 820px;
+	}
+}
+.card-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1.5;
+	@include breakpoint(max-width 1023px) {
+		justify-content: center;
+	}
+	+ .card-item {
+		margin-top: 40px;
+	}
+	.card-img {
+		display: block;
+		position: relative;
+		width: 100%;
+		@include breakpoint(1024px) {
+			width: 300px;
+		}
+		&::before {
+			@include beforeafter("", block);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: $darken-blue;
+			background: radial-gradient(
+				circle,
+				rgba($darken-blue, 0.5) 0%,
+				rgba($darken-blue, 1) 100%
+			);
+			@include opacity(0);
+			@include transition(opacity 0.3s);
+		}
+		&::after {
+			@include beforeafter("", block);
+			width: 100%;
+			height: 0;
+			@include breakpoint(max-width 1023px) {
+				padding-top: 45.454545%;
+			}
+		}
+		&:hover::before {
+			@include opacity(0.75);
+		}
+		img {
+			width: 100%;
+			@include breakpoint(max-width 1023px) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.card-body {
+		width: 100%;
+        padding-top: 20px;
+		@include breakpoint(768px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include breakpoint(1024px) {
+			width: calc(100% - 300px);
+			padding-top: 0px;
+			padding-right: 0px;
+		}
+		a.card-title {
+			color: $white;
+			&:hover {
+				color: $light-blue;
+			}
+		}
+		p {
+			color: $gray-200;
+			@include lineclamp(3);
+		}
+	}
+	a.btn {
+        width: 150px;
+        @include breakpoint(max-width 1023px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+	}
+}

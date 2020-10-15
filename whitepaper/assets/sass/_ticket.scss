@@ -1,0 +1,209 @@
+.price-table {
+	display: flex;
+	align-items: flex-start;
+	@include breakpoint(max-width 589px) {
+		margin-left: -20px;
+		margin-right: -20px;
+		overflow: scroll;
+		&::before,
+		&::after {
+			@include beforeafter("", table);
+			width: 20px;
+			height: 1px;
+		}
+	}
+	@include breakpoint(max-width 374px) {
+		margin-left: -15px;
+		margin-right: -15px;
+		&::before,
+		&::after {
+			width: 15px;
+		}
+	}
+	.price-item {
+		width: calc((100% - 20px) / 2);
+		min-width: 240px;
+		@include breakpoint(375px) {
+			min-width: 275px;
+		}
+		@include breakpoint(414px) {
+			min-width: 285px;
+		}
+		+ .price-item {
+			margin-left: 15px;
+			@include breakpoint(375px) {
+				margin-left: 20px;
+			}
+		}
+		> * {
+			padding: 20px;
+			@include breakpoint(414px) {
+				padding: 30px 25px;
+			}
+		}
+		.price-header {
+			background-color: $dark-blue;
+			.price-label {
+				color: $gray-200;
+			}
+			.price {
+				display: flex;
+				align-items: flex-end;
+				color: $white;
+				line-height: 1;
+			}
+		}
+		.price-body {
+			position: relative;
+			background-color: $white;
+			&::before,
+			&::after {
+				position: absolute;
+				top: 0;
+				@include beforeafter("", block);
+				z-index: 0;
+			}
+			&::before {
+				left: 0;
+				right: 0;
+				height: 0;
+				background-color: $dark-blue;
+				@include transition(height 0.3s);
+			}
+			&::after {
+				left: 30px;
+				right: 30px;
+				height: 1px;
+				background-color: $white;
+			}
+			> * {
+				position: relative;
+				z-index: 1;
+			}
+			.price-list {
+				@include list(0, 0, none);
+				li {
+					position: relative;
+					padding-left: 1.5em;
+					margin-bottom: 10px;
+					@include transition(color 0.3s 0.05s);
+					i.icon {
+						position: absolute;
+						top: calc((1.375rem / 2) - 0.5rem);
+						left: 0;
+						padding-right: 0.5em;
+						color: $dark-blue;
+						font-weight: bold;
+					}
+					span {
+						display: inline-block;
+					}
+					&.disable {
+						@include opacity(0.25);
+						@include transition(opacity 0.3s 0.05s);
+						&::before {
+							// @include beforeafter("", block);
+							position: absolute;
+							top: 50%;
+							left: 0;
+							right: 0;
+							height: 1px;
+							background-color: $black;
+						}
+						i.icon,
+						span {
+							color: $black;
+						}
+					}
+				}
+			}
+			a.btn.btn--dark {
+				display: table;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				color: $dark-blue;
+				border-color: $dark-blue;
+				background-color: transparent;
+				@include transition(all 0.3s 0.05s);
+			}
+			&:hover {
+				&::before {
+					height: 100%;
+				}
+				.price-list {
+					li {
+						color: $white;
+						i.icon {
+							color: $light-blue;
+						}
+						&.disable {
+							&::before {
+								background-color: $white;
+							}
+							i.icon,
+							span {
+								color: $white;
+							}
+						}
+					}
+				}
+				a.btn.btn--dark {
+					color: $yellow;
+					border-color: $yellow;
+					&:hover {
+						color: $black;
+						background-color: $yellow;
+					}
+				}
+			}
+		}
+	}
+}
+.map-area {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	@include breakpoint(768px) {
+	}
+	@include breakpoint(max-width 767px) {
+		flex-direction: column-reverse;
+	}
+	.map-text {
+		width: 100%;
+		padding: 20px 30px;
+		color: $dark-blue;
+		background-color: $white;
+		@include breakpoint(414px) {
+			padding: 30px;
+		}
+		@include breakpoint(768px) {
+			width: calc(50% + 10px);
+			padding: 50px 30px;
+		}
+		.font-weight-500 {
+			font-weight: 700;
+		}
+		address {
+			color: $gray-100;
+			font-size: 0.75rem;
+			font-style: normal;
+			@include breakpoint(768px) {
+				font-size: 0.875rem;
+			}
+		}
+	}
+	.map {
+		width: 100%;
+		@include breakpoint(768px) {
+			width: calc(50% - 10px);
+		}
+		@include breakpoint(max-width 767px) {
+			height: 210px;
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

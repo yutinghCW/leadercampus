@@ -1,0 +1,135 @@
+.timeline {
+	position: relative;
+	&::before {
+		@include beforeafter("", block);
+		position: absolute;
+		top: 0;
+		left: 4.75rem;
+		width: 1px;
+		height: 100%;
+		background-color: $dark-blue;
+		@include breakpoint(375px) {
+			left: 5.25rem;
+		}
+		@include breakpoint(768px) {
+			left: 5.5rem;
+		}
+	}
+	.timeline-item {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0;
+	}
+	.timeline-timecode {
+		position: relative;
+		width: 6rem;
+		padding-right: 2.5rem;
+		color: $dark-blue;
+		line-height: 1.5625rem;
+		text-align: center;
+		@include breakpoint(375px) {
+			width: 6.5rem;
+		}
+		@include breakpoint(768px) {
+			width: 7rem;
+			padding-right: 3rem;
+			line-height: 2.25rem;
+		}
+		&::before {
+			@include beforeafter("", block);
+			position: absolute;
+			top: calc(0.78125rem - 5px);
+			right: calc(1.25rem - 5px);
+			width: 10px;
+			height: 10px;
+			background-color: $dark-blue;
+			border: 1px solid $white;
+			@include border-radius(50%);
+			@include breakpoint(768px) {
+				top: calc(1.125rem - 5px);
+				right: calc(1.5rem - 5px);
+			}
+		}
+	}
+	.timeline-text {
+		width: calc(100% - 6rem);
+		color: $gray-100;
+		@include breakpoint(375px) {
+			width: calc(100% - 6.5rem);
+		}
+		@include breakpoint(768px) {
+			width: calc(100% - 7rem);
+		}
+		.timeline-title {
+			color: $dark-blue;
+		}
+	}
+	.timeline-speaker {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 5px;
+		@include breakpoint(768px) {
+			padding-left: 3.375rem;
+		}		
+		@include breakpoint(max-width 767px) {
+			padding-left: 2.625rem;
+		}
+		.timeline-speaker-label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 3.375rem;
+			@include breakpoint(768px) {
+				font-size: 1.125rem;
+			}		
+			@include breakpoint(max-width 767px) {
+				display: inline;
+				font-size: 0.875rem;
+			}
+		}
+		.timeline-speaker-text {
+			width: 100%;
+			font-size: 0;
+			// cursor: pointer;
+			// @include transition(color 0.3s);
+			@include breakpoint(768px) {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				width: calc(100% - 3.375rem);
+			}
+			&:hover {
+				// color: $light-blue;
+			}
+			+ .timeline-speaker-text {
+				margin-top: 5px;
+			}
+			> div {
+				@include breakpoint(768px) {
+					font-size: 1.125rem;
+				}		
+				@include breakpoint(max-width 767px) {
+					display: inline;
+					font-size: 0.875rem;
+				}
+			}
+			.timeline-speaker-title {
+				margin-right: 1em;
+			}
+			.timeline-speaker-img {
+				width: 1.25em;
+				height: 1.25em;
+				margin-right: 0.5em;
+				@include border-radius(50%);
+				overflow: hidden;
+				@include breakpoint(max-width 767px) {
+					display: none;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

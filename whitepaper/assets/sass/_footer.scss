@@ -1,0 +1,16 @@
+footer {
+    color: $white;
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px solid $white;
+    }
+	p {
+        font-size: 0.875rem;
+        line-height: 1.15;
+        span {
+            display: inline-block;
+            margin-right: 1em;
+		}
+	}
+}

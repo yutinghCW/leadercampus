@@ -1,0 +1,43 @@
+$h-size: 4.5rem, 2.25rem, 1.5rem, 1.125rem, 1rem;
+$h-m-size: 3.75rem, 1.5rem, 1.125rem, 1rem, 0.875rem;
+@for $i from 2 through 5 {
+	h#{$i},
+	.h#{$i} {
+		font-size: nth($h-m-size, $i);
+		@include breakpoint(768px) {
+			font-size: nth($h-size, $i);
+		}
+	}
+}
+@for $i from 1 through 1 {
+	.index-page {
+		h#{$i},
+		.h#{$i} {
+			font-size: nth($h-m-size, $i);
+			@include breakpoint(768px) {
+				font-size: nth($h-size, $i);
+			}
+		}
+	}
+}
+@for $i from 1 through 1 {
+	.inner-page {
+		h#{$i},
+		.h#{$i} {
+			font-size: 2.25rem;
+			@include breakpoint(768px) {
+				font-size: 3.75rem;
+			}
+		}
+	}
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 600;
+	@include breakpoint(768px) {
+		font-weight: 500;
+	}
+}

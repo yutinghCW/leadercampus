@@ -1,0 +1,144 @@
+@import "_mixins";
+@import "_variable";
+@import "_general";
+@import "_space";
+@import "_icon";
+@import "_font";
+@import "_container";
+@import "_button";
+@import "_textfield";
+@import "_header";
+@import "_footer";
+@import "_model";
+section,
+footer {
+	position: relative;
+	z-index: 1;
+}
+footer {
+	margin-top: 150px;
+}
+section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include breakpoint(414px) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	@include breakpoint(768px) {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+	&.opening {
+		height: 100vh;
+		padding-top: 0;
+		overflow: hidden;
+	}
+	// &.about {
+	//     margin-top: 150px;
+	// }
+	&.speaker {
+		overflow: hidden;
+	}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 50px;
+		color: $white;
+		font-size: 0;
+		text-align: center;
+		&::before,
+		&::after {
+			@include beforeafter("", inline-block);
+			width: 0;
+			height: 0;
+			margin: 0 15px;
+			border-style: solid;
+			vertical-align: middle;
+		}
+		&::before {
+			border-width: 24px 24px 0 0;
+			border-color: $white transparent transparent transparent;
+		}
+		&::after {
+			border-width: 0 0 24px 24px;
+			border-color: transparent transparent $white transparent;
+		}
+		> span {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 2.25rem;
+		}
+	}
+	.edit-area {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		p {
+			color: $white;
+			font-size: 1rem;
+			@include breakpoint(768px) {
+				font-size: 1.125rem;
+			}
+		}
+	}
+}
+.index-page {
+	section {
+		&:nth-child(even):not(.sponsor) {
+			background-color: $white;
+			h2 {
+				color: $black;
+				&::before {
+					border-color: $black transparent transparent transparent;
+				}
+				&::after {
+					border-color: transparent transparent $black transparent;
+				}
+			}
+			.edit-area p {
+				color: $black;
+			}
+		}
+	}
+}
+.inner-page {
+	section {
+		&.inner-op {
+			position: relative;
+			height: 50vh;
+			&::before {
+				@include beforeafter('', block);
+				position: absolute;
+				bottom: -17.346939vw;
+				left: 0;
+				width: 100%;
+				height: 0;
+				padding-top: 50.204082%;
+				background-image: url('../images/op2.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				@include background-size(contain);
+				@include opacity(0.5);
+				z-index: -1;
+			}
+			h1 {
+				color: $white;
+				text-align: center;
+			}
+		}
+	}
+}
+.survey-page {
+	background-color: transparent;
+	.field + .field {
+		margin-top: 20px;
+	}
+	.btn {
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}
+@import "_opening";
+@import "_timeline";
+@import "_ticket";
+@import "_card";

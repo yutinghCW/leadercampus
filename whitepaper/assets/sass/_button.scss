@@ -1,0 +1,155 @@
+button,
+a {
+	background-color: transparent;
+	align-self: baseline;
+	border: 0;
+	@include border-radius(0);
+	@include appearance(none);
+	&:focus {
+		outline: 0;
+	}
+}
+
+.btn {
+	position: relative;
+	display: block;
+	min-width: 115px;
+	padding: 0.6875em 1em;
+	font-size: 1rem;
+	line-height: 1.25;
+	text-align: center;
+	word-break: keep-all;
+	overflow: hidden;
+	outline: 0;
+	cursor: pointer;
+	@include breakpoint(375px) {
+		min-width: 135px;
+	}
+	@include breakpoint(768px) {
+		min-width: 150px;
+		padding: 0.563em 1em;
+	}
+	&.btn--small {
+		min-width: 72px;
+		padding: 0.7em 1em;
+		font-size: 0.875rem;
+		line-height: 1;
+	}
+	+ button.btn,
+	+ a.btn {
+		margin-left: 0.5rem;
+		@include breakpoint(768px) {
+			margin-left: 1rem;
+		}
+	}
+	&::before,
+	&::after {
+		@extend %before-after;
+		position: absolute;
+		@include opacity(0);
+		z-index: -1;
+	}
+	&::before {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		@include transition(opacity 0.2s);
+	}
+	&::after {
+		left: 50%;
+		top: 50%;
+		padding: 55%;
+		width: 32px;
+		height: 32px;
+		@include border-radius(50%);
+		@include transform(translate(-50%, -50%) scale(1));
+		@include transition(opacity 2s, transform 0.5s);
+	}
+	&:hover {
+		&::before {
+			opacity: 0.04;
+		}
+		&:focus {
+			&::before {
+				opacity: 0.16;
+			}
+		}
+	}
+	&:focus {
+		&::before {
+			opacity: 0.12;
+		}
+	}
+	&:active {
+		&::after {
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(0);
+			transition: transform 0s;
+		}
+	}
+	&--text {
+		display: inline;
+		min-width: auto;
+		padding: 0;
+		color: $light-blue;
+		text-decoration: underline;
+		border: 0;
+		cursor: pointer;
+		&:hover {
+			color: $blue;
+		}
+		&.disabled {
+			color: $gray-200;
+			cursor: not-allowed;
+		}
+	}
+	&--outlined {
+		color: $light-blue;
+		border: 1px solid $light-blue;
+		z-index: 1;
+		&::-moz-focus-inner {
+			border: none;
+		}
+		&:hover,
+		&.active {
+			color: $black;
+			border-color: $light-blue;
+			background-color: $light-blue;
+		}
+	}
+	&--contained {
+		color: $white;
+		background-color: $light-blue;
+		border: 1px solid $light-blue;
+		z-index: 1;
+		&::-moz-focus-inner {
+			border: none;
+		}
+		&:hover,
+		&.active {
+			background-color: darken($light-blue, 5%);
+			border-color: darken($light-blue, 5%);
+		}
+	}
+	&--100 {
+		width: 100%;
+	}
+	&[disabled] {
+		color: $gray-200;
+		background: $gray-100;
+		border: 1px solid $gray-100;
+		cursor: not-allowed;
+		&::before {
+			opacity: 0;
+		}
+		&::after {
+			opacity: 0;
+		}
+		&:hover {
+			color: $gray-200;
+			background: $gray-100;
+			border: 1px solid $gray-100;
+		}
+	}
+}

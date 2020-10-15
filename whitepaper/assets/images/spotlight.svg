@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1674.873" height="3767.964" viewBox="0 0 1674.873 3767.964">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.222" gradientTransform="translate(1.079 1.116) rotate(180) scale(2.25)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef6a75"/>
+      <stop offset="0.037" stop-color="#ef6a75" stop-opacity="0.827"/>
+      <stop offset="0.081" stop-color="#ef6a75" stop-opacity="0.655"/>
+      <stop offset="0.131" stop-color="#ef6a75" stop-opacity="0.498"/>
+      <stop offset="0.184" stop-color="#ef6a75" stop-opacity="0.361"/>
+      <stop offset="0.244" stop-color="#ef6a75" stop-opacity="0.247"/>
+      <stop offset="0.311" stop-color="#ef6a75" stop-opacity="0.157"/>
+      <stop offset="0.39" stop-color="#ef6a75" stop-opacity="0.086"/>
+      <stop offset="0.486" stop-color="#ef6a75" stop-opacity="0.035"/>
+      <stop offset="0.622" stop-color="#ef6a75" stop-opacity="0.008"/>
+      <stop offset="1" stop-color="#ef6a75" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="837.436" cy="1883.982" rx="837.436" ry="1883.982" fill="url(#radial-gradient)"/>
+</svg>

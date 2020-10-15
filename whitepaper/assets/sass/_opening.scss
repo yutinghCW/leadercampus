@@ -1,0 +1,241 @@
+.visual__background {
+	&.visual__background--fixed {
+		position: absolute;
+		top: 0;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+	.fixed-bg-left-blue {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 100vw;
+		left: -50vw;
+		background: $blue;
+		background: radial-gradient(
+			circle,
+			rgba($blue, 1) 0%,
+			rgba($blue, 0) 50%,
+			rgba($blue, 0) 100%
+		);
+		z-index: 1;
+	}
+	.fixed-bg-right-orange {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 100vw;
+		right: -50vw;
+		background: $darken-green;
+		background: radial-gradient(
+			circle,
+			rgba($darken-green, 1) 0%,
+			rgba($darken-green, 0) 50%,
+			rgba($darken-green, 0) 100%
+		);
+		z-index: 1;
+	}
+	.fixed-drop-bg {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $darken-blue;
+		filter: blur(10px);
+		z-index: 0;
+		svg {
+			display: block;
+			margin: auto;
+			width: 100%;
+			height: 100%;
+			#Rectangle_86 {
+				@include breakpoint(max-width 1023px) {
+					@include translateY(25%);
+				}
+			}
+		}
+	}
+	.flow-line-bg,
+	.earth-spotlight {
+		position: relative;
+		z-index: 2;
+	}
+	.flow-line-bg {
+		img {
+			width: 100%;
+			height: calc(100vh + 16.40625vw);
+		}
+	}
+	.earth-spotlight {
+		position: absolute;
+		top: 50%;
+		left: calc(50% - 45vw);
+		width: 60vw;
+		height: 60vw;
+		background: $yellow;
+		background: radial-gradient(
+			circle,
+			rgba($yellow, 1) 0%,
+			rgba($yellow, 0.82) 3%,
+			rgba($yellow, 0.65) 8%,
+			rgba($yellow, 0.5) 13%,
+			rgba($yellow, 0.36) 18%,
+			rgba($yellow, 0.24) 24%,
+			rgba($yellow, 0.15) 31%,
+			rgba($yellow, 0.08) 39%,
+			rgba($yellow, 0.03) 48%,
+			rgba($yellow, 0) 62%,
+			rgba($yellow, 0) 100%
+		);
+		@include transform(
+			translate(-50%, -50%) rotate(330deg) scale(1, 2.315)
+		);
+		@include breakpoint(768px) {
+			left: calc(50% - 300px);
+		}
+	}
+	.earth {
+		position: absolute;
+		top: calc(50% - 40px);
+		left: 50%;
+		width: 90vw;
+		height: 90vw;
+		padding-left: 5px;
+		background: $darken-blue;
+		background: radial-gradient(
+			circle,
+			rgba($darken-blue, 1) 0%,
+			rgba($darken-blue, 1) 50%,
+			rgba($darken-blue, 0.4) 100%
+		);
+		@include translate(-50%, -50%);
+		@include border-radius(50%);
+		z-index: 2;
+		@include breakpoint(768px) {
+			width: 600px;
+			height: 600px;
+		}
+		img {
+			width: auto;
+			height: 90vw;
+			@include breakpoint(768px) {
+				height: 600px;
+			}
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include beforeafter("", block);
+		}
+	}
+	.standard-text {
+		position: absolute;
+		top: calc(50% - 40px);
+		left: 50%;
+		@include translate(-50%, -50%);
+		z-index: 2;
+		@include breakpoint(768px) {
+			padding: 20px;
+		}
+		@include breakpoint(max-width 767px) {
+			width: 70vw;
+			padding: 10px;
+		}
+		&::before {
+			@include beforeafter("", block);
+			position: absolute;
+			left: 50%;
+			background: $dark-blue;
+			background: radial-gradient(
+				circle,
+				rgba($dark-blue, 1) 0%,
+				rgba($dark-blue, 0) 60%
+			);
+			z-index: -1;
+			@include breakpoint(max-width 1023px) {
+				top: 50%;
+				width: 100%;
+				height: 0;
+				padding-top: 100%;
+				@include translate(-50%, -50%);
+			}
+			@include breakpoint(1024px) {
+				top: 50%;
+				width: 350px;
+				height: 350px;
+				@include transform(translate(-50%, -50%) scale(3.54285714, 1));
+			}
+		}
+		img {
+			&.desktop {
+				width: 850px;
+				@include breakpoint(max-width 1023px) {
+					display: none;
+				}
+			}
+			&.mobile {
+				width: 100%;
+				@include breakpoint(1024px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.mouse-scroll {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	@include translateX(-50%);
+	z-index: 3;
+	.mouse {
+		position: relative;
+		display: block;
+		width: 22px;
+		height: 40px;
+		margin: 0 auto;
+		border: 2px solid $white;
+		@include border-radius(20px);
+		.mouse-movement {
+			position: absolute;
+			display: block;
+			top: 29%;
+			left: 50%;
+			width: 2px;
+			height: 8px;
+			margin-left: -1px;
+			background-color: $white;
+			@include animation(scroll-ani 4s linear infinite);
+		}
+	}
+	.mouse-message {
+		color: $white;
+		font-size: 0.875rem;
+		@include animation(scroll-ani 4s linear infinite);
+	}
+}
+@include keyframes(scroll-ani) {
+	0% {
+		opacity: 1;
+		top: 29%;
+	}
+	15% {
+		opacity: 1;
+		top: 50%;
+	}
+	50% {
+		opacity: 0;
+		top: 50%;
+	}
+	100% {
+		opacity: 0;
+		top: 29%;
+	}
+}
