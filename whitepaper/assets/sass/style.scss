@@ -21,13 +21,9 @@ footer {
 section {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	@include breakpoint(414px) {
+	@include breakpoint(768px) {
 		padding-top: 75px;
 		padding-bottom: 75px;
-	}
-	@include breakpoint(768px) {
-		padding-top: 150px;
-		padding-bottom: 150px;
 	}
 	&.opening {
 		height: 100vh;
@@ -39,6 +35,15 @@ section {
 	// }
 	&.speaker {
 		overflow: hidden;
+	}
+	&#topic {
+		padding-top: 100px;
+		@include breakpoint(768px) {
+			padding-top: 150px;
+		}
+		@include breakpoint(1024px) {
+			padding-top: 200px;
+		}
 	}
 	h2 {
 		margin-top: 0;
@@ -113,25 +118,43 @@ section {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 50vh;
+			min-height: 50vh;
+			@include breakpoint(768px) {
+				min-height: 70vw;
+			}
+			@include breakpoint(1024px) {
+				min-height: 50vh;
+			}
+			@include breakpoint(1200px) {
+				min-height: 28.125vw;
+			}
 			&::before {
-				@include beforeafter('', block);
+				@include beforeafter("", block);
 				position: absolute;
-				bottom: -17.346939vw;
+				bottom: -30vw;
 				left: 0;
 				width: 100%;
 				height: 0;
-				padding-top: 50.204082%;
-				background-image: url('../images/op2.png');
+				padding-top: 100%;
+				background-image: url("../images/op2.png");
 				background-repeat: no-repeat;
 				background-position: center;
-				@include background-size(contain);
+				@include background-size(cover);
 				@include opacity(0.5);
 				z-index: -1;
+				@include breakpoint(1024px) {
+					bottom: -17.346939vw;
+					padding-top: 50.204082%;
+					@include background-size(contain);
+				}
 			}
 			h1 {
+				padding-bottom: 30px; //滾動動畫高度一半
 				color: $white;
 				text-align: center;
+				@include breakpoint(768px) {
+					padding-bottom: 60px; //滾動動畫高度
+				}
 			}
 		}
 	}
@@ -143,7 +166,7 @@ section {
 	}
 	.btn {
 		margin-left: auto;
-		margin-right: auto;	
+		margin-right: auto;
 	}
 }
 @import "_opening";

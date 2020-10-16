@@ -144,7 +144,23 @@ nav {
 			color: $white;
 			font-size: 1.125rem;
 			&.active, &:hover {
-				color: $light-blue;
+				@include breakpoint(1024px) {
+					color: $light-blue;
+				}
+			}
+		}
+		i.icon {
+			display: block;
+			padding: 0 10px;
+			margin-right: -10px;
+			color: $white;
+			font-size: 1.125rem;
+			@include transition(transform 0.3s);
+			@include breakpoint(1024px) {
+				display: none;
+			}
+			&.active {
+				@include rotate(90deg);
 			}
 		}
 	}
@@ -155,6 +171,10 @@ nav {
 			position: relative;
 			vertical-align: middle;
 			@include breakpoint(max-width 1023px) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
 				margin-bottom: 20px;
 			}
 			@include breakpoint(1024px) {
@@ -176,21 +196,23 @@ nav {
 			// 	}
 			// }
 			> a {
-				border-bottom: 2px solid transparent;
 				@include breakpoint(1024px) {
 					// line-height: 2.22222222;
 					line-height: 4.5;
+					border-bottom: 2px solid transparent;
 				}
 			}
 			> ul {
 				display: none;
-				position: absolute;
-				top: 100%;
-				left: 0;
 				padding: 10px 0;
-				width: calc(1.125rem * 5 + 44px);
-				background-color: $black;
-				border: 1px solid $light-blue;
+				@include breakpoint(1024px) {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: calc(1.125rem * 5 + 44px);
+					background-color: $black;
+					border: 1px solid $light-blue;
+				}
 				li {
 					a {
 						padding: 10px 20px;
@@ -198,11 +220,13 @@ nav {
 				}
 			}
 			&:hover {
-				> a {
-					border-color: $light-blue;
-				}
-				> ul {
-					display: block;
+				@include breakpoint(1024px) {
+					> a {
+						border-color: $light-blue;
+					}
+					> ul {
+						display: block;
+					}
 				}
 			}
 		}

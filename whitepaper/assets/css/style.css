@@ -2141,8 +2141,32 @@ nav ul a {
   color: #fff;
   font-size: 1.125rem;
 }
-nav ul a.active, nav ul a:hover {
-  color: #00CCCC;
+@media (min-width: 1024px) {
+  nav ul a.active, nav ul a:hover {
+    color: #00CCCC;
+  }
+}
+nav ul i.icon {
+  display: block;
+  padding: 0 10px;
+  margin-right: -10px;
+  color: #fff;
+  font-size: 1.125rem;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+@media (min-width: 1024px) {
+  nav ul i.icon {
+    display: none;
+  }
+}
+nav ul i.icon.active {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 nav > ul {
   margin: 0;
@@ -2156,6 +2180,10 @@ nav > ul > li {
 }
 @media (max-width: 1023px) {
   nav > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
 }
@@ -2170,32 +2198,36 @@ nav > ul > li {
     margin-left: 20px;
   }
 }
-nav > ul > li > a {
-  border-bottom: 2px solid transparent;
-}
 @media (min-width: 1024px) {
   nav > ul > li > a {
     line-height: 4.5;
+    border-bottom: 2px solid transparent;
   }
 }
 nav > ul > li > ul {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
   padding: 10px 0;
-  width: calc(1.125rem * 5 + 44px);
-  background-color: #000;
-  border: 1px solid #00CCCC;
+}
+@media (min-width: 1024px) {
+  nav > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(1.125rem * 5 + 44px);
+    background-color: #000;
+    border: 1px solid #00CCCC;
+  }
 }
 nav > ul > li > ul li a {
   padding: 10px 20px;
 }
-nav > ul > li:hover > a {
-  border-color: #00CCCC;
-}
-nav > ul > li:hover > ul {
-  display: block;
+@media (min-width: 1024px) {
+  nav > ul > li:hover > a {
+    border-color: #00CCCC;
+  }
+  nav > ul > li:hover > ul {
+    display: block;
+  }
 }
 
 footer {
@@ -2504,16 +2536,10 @@ section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-@media (min-width: 414px) {
+@media (min-width: 768px) {
   section {
     padding-top: 75px;
     padding-bottom: 75px;
-  }
-}
-@media (min-width: 768px) {
-  section {
-    padding-top: 150px;
-    padding-bottom: 150px;
   }
 }
 section.opening {
@@ -2523,6 +2549,19 @@ section.opening {
 }
 section.speaker {
   overflow: hidden;
+}
+section#topic {
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  section#topic {
+    padding-top: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  section#topic {
+    padding-top: 200px;
+  }
 }
 section h2 {
   margin-top: 0;
@@ -2594,31 +2633,62 @@ section .edit-area p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  min-height: 50vh;
+}
+@media (min-width: 768px) {
+  .inner-page section.inner-op {
+    min-height: 70vw;
+  }
+}
+@media (min-width: 1024px) {
+  .inner-page section.inner-op {
+    min-height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-page section.inner-op {
+    min-height: 28.125vw;
+  }
 }
 .inner-page section.inner-op::before {
   content: "";
   display: block;
   position: absolute;
-  bottom: -17.346939vw;
+  bottom: -30vw;
   left: 0;
   width: 100%;
   height: 0;
-  padding-top: 50.204082%;
+  padding-top: 100%;
   background-image: url("../images/op2.png");
   background-repeat: no-repeat;
   background-position: center;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -webkit-background-size: contain;
-  background-size: contain;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .inner-page section.inner-op::before {
+    bottom: -17.346939vw;
+    padding-top: 50.204082%;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
 .inner-page section.inner-op h1 {
+  padding-bottom: 30px;
   color: #fff;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .inner-page section.inner-op h1 {
+    padding-bottom: 60px;
+  }
 }
 
 .survey-page {

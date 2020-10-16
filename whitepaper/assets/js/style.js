@@ -8,6 +8,10 @@ $(function () {
 	$("nav a").click(function () {
 		$(".hamburger, nav").removeClass("active");
 	});
+	$('nav ul li i.icon').click(function () {
+		$(this).toggleClass('active');
+		$(this).siblings('ul').slideToggle();
+	});
 	// Smooth scrolling using jQuery easing
 	$('a.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
 		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
