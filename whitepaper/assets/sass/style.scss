@@ -110,6 +110,9 @@ section {
 	section {
 		&.inner-op {
 			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			height: 50vh;
 			&::before {
 				@include beforeafter('', block);
