@@ -203,9 +203,10 @@ nav {
 				}
 			}
 			> ul {
-				display: none !important;
+				display: none;
 				padding: 10px 0;
 				@include breakpoint(1024px) {
+					display: none !important;
 					position: absolute;
 					top: 100%;
 					left: 0;

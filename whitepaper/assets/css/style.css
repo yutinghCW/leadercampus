@@ -2205,11 +2205,12 @@ nav > ul > li {
   }
 }
 nav > ul > li > ul {
-  display: none !important;
+  display: none;
   padding: 10px 0;
 }
 @media (min-width: 1024px) {
   nav > ul > li > ul {
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
