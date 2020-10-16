@@ -2552,6 +2552,11 @@ section h2 > span {
   vertical-align: middle;
   font-size: 2.25rem;
 }
+section h2 + p {
+  margin-bottom: 50px;
+  color: #ccc;
+  text-align: center;
+}
 section .edit-area {
   max-width: 600px;
   margin-left: auto;

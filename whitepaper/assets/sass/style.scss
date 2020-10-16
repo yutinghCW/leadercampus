@@ -6,7 +6,7 @@
 @import "_font";
 @import "_container";
 @import "_button";
-@import "_textfield";
+@import "_survey";
 @import "_header";
 @import "_footer";
 @import "_model";
@@ -67,6 +67,11 @@ section {
 			display: inline-block;
 			vertical-align: middle;
 			font-size: 2.25rem;
+		}
+		+ p {
+			margin-bottom: 50px;
+			color: $gray-200;
+			text-align: center;
 		}
 	}
 	.edit-area {
