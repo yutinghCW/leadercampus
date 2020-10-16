@@ -203,7 +203,7 @@ nav {
 				}
 			}
 			> ul {
-				display: none;
+				display: none !important;
 				padding: 10px 0;
 				@include breakpoint(1024px) {
 					position: absolute;
@@ -225,7 +225,7 @@ nav {
 						border-color: $light-blue;
 					}
 					> ul {
-						display: block;
+						display: block !important;
 					}
 				}
 			}

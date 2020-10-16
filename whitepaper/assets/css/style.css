@@ -2205,7 +2205,7 @@ nav > ul > li {
   }
 }
 nav > ul > li > ul {
-  display: none;
+  display: none !important;
   padding: 10px 0;
 }
 @media (min-width: 1024px) {
@@ -2226,7 +2226,7 @@ nav > ul > li > ul li a {
     border-color: #00CCCC;
   }
   nav > ul > li:hover > ul {
-    display: block;
+    display: block !important;
   }
 }
 
