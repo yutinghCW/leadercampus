@@ -2599,9 +2599,11 @@ section h2 + p {
   text-align: center;
 }
 section .edit-area {
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+section .edit-area.edit-area-600 {
+  max-width: 600px;
 }
 section .edit-area p {
   color: #fff;
@@ -3345,15 +3347,9 @@ section .edit-area p {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-@media (max-width: 767px) {
-  .map-area {
-    flex-direction: column-reverse;
-  }
-}
 .map-area .map-text {
   width: 100%;
   padding: 20px 30px;
-  color: #004977;
   background-color: #fff;
 }
 @media (min-width: 414px) {
@@ -3363,12 +3359,27 @@ section .edit-area p {
 }
 @media (min-width: 768px) {
   .map-area .map-text {
-    width: calc(50% + 10px);
     padding: 50px 30px;
   }
 }
+@media (min-width: 1200px) {
+  .map-area .map-text .map-text-container {
+    padding-left: calc((100vw - 1160px) / 2);
+  }
+}
+@media (min-width: 1440px) {
+  .map-area .map-text .map-text-container {
+    padding-left: calc((100vw - 1280px) / 2);
+  }
+}
+.map-area .map-text .color-text {
+  color: #004977;
+}
 .map-area .map-text .font-weight-500 {
   font-weight: 700;
+}
+.map-area .map-text .h5-label {
+  font-size: 1rem;
 }
 .map-area .map-text address {
   color: #666;
@@ -3385,7 +3396,7 @@ section .edit-area p {
 }
 @media (min-width: 768px) {
   .map-area .map {
-    width: calc(50% - 10px);
+    height: 300px;
   }
 }
 @media (max-width: 767px) {

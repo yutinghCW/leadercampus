@@ -30,14 +30,15 @@ $(function () {
 		offset: height/2,
 	});
 	$(".slick-center").slick({
-		centerMode: true,
+		// centerMode: true,
+		centerMode: false,
 		centerPadding: "0",
 		slidesToShow: 5,
 		responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
-					centerMode: true,
+					centerMode: false,
 					centerPadding: "0",
 					slidesToShow: 3,
 				},
@@ -45,7 +46,7 @@ $(function () {
 			{
 				breakpoint: 1024,
 				settings: {
-					centerMode: true,
+					centerMode: false,
 					centerPadding: "0",
 					slidesToShow: 1,
 				},
