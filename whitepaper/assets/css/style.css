@@ -2471,17 +2471,14 @@ footer p span {
 }
 .modal-body .model-basic .model-text h2 {
   font-size: 2.25rem;
+  line-height: 1.125;
 }
 .modal-body .model-basic .model-text h2 span {
   display: block;
+}
+.modal-body .model-basic .model-text h2 span:last-child {
   font-size: 1.125rem;
   font-weight: normal;
-}
-@media (min-width: 576px) {
-  .modal-body .model-basic .model-text h2 span {
-    display: inline-block;
-    padding-left: 10px;
-  }
 }
 .modal-body .model-basic .model-text .h4 {
   font-size: 1rem;
@@ -2838,6 +2835,7 @@ section .edit-area p {
   position: absolute;
   top: calc(50% - 40px);
   left: 50%;
+  text-align: center;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -2886,6 +2884,14 @@ section .edit-area p {
     -webkit-transform: translate(-50%, -50%) scale(3.54286, 1);
     transform: translate(-50%, -50%) scale(3.54286, 1);
   }
+}
+.visual__background .standard-text .h4 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: 0 0 10px #004977, 0 0 10px #004977;
 }
 .visual__background .standard-text img.desktop {
   width: 850px;
@@ -3515,6 +3521,7 @@ section .edit-area p {
   }
 }
 .card-item .card-body a.card-title {
+  display: block;
   color: #fff;
 }
 .card-item .card-body a.card-title:hover {
@@ -3527,6 +3534,11 @@ section .edit-area p {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+@media (min-width: 1024px) {
+  .card-item .card-body p {
+    -webkit-line-clamp: 2;
+  }
+}
 .card-item a.btn {
   width: 150px;
 }
@@ -3535,6 +3547,24 @@ section .edit-area p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.logo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+}
+.logo-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.logo-list li:first-child {
+  margin-left: 0;
+}
+.logo-list li img {
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

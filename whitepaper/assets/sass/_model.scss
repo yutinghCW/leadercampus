@@ -200,13 +200,12 @@
 			}
 			h2 {
 				font-size: 2.25rem;
+				line-height: 1.125;
 				span {
 					display: block;
-					font-size: 1.125rem;
-					font-weight: normal;
-					@media (min-width: 576px) {
-						display: inline-block;
-						padding-left: 10px;
+					&:last-child {
+						font-size: 1.125rem;
+						font-weight: normal;
 					}
 				}
 			}

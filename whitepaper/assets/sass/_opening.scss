@@ -138,6 +138,7 @@
 		position: absolute;
 		top: calc(50% - 40px);
 		left: 50%;
+		text-align: center;
 		@include translate(-50%, -50%);
 		z-index: 2;
 		@include breakpoint(768px) {
@@ -171,6 +172,14 @@
 				height: 350px;
 				@include transform(translate(-50%, -50%) scale(3.54285714, 1));
 			}
+		}
+		.h4 {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			color: $white;
+			text-shadow: 0 0 10px $dark-blue, 0 0 10px $dark-blue;
 		}
 		img {
 			&.desktop {

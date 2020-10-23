@@ -181,3 +181,18 @@ section {
 @import "_timeline";
 @import "_ticket";
 @import "_card";
+.logo-list {
+	@include list(0, 0, none);
+	font-size: 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-left: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+		img {
+			height: 50px;
+		}
+	}
+}

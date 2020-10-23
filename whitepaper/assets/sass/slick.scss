@@ -91,7 +91,9 @@
 }
 .slick-initialized .slick-slide {
 	display: block;
-	@include opacity(0.5);
+	padding-left: 10px;
+	padding-right: 10px;
+	// @include opacity(0.5);
 	@include transition(transform 0.3s, opacity 0.3s);
 	&.slick-current {
 		@include opacity(1);
@@ -110,7 +112,7 @@
 	.slick-img {
 		position: relative;
 		transform-origin: left center;
-		@include scale(0.925);
+		// @include scale(0.925);
 	}
 	.slick-text {
 		color: $white;
@@ -118,7 +120,7 @@
 		padding-right: 0;
 		line-height: 1.125;
 		text-align: center;
-		@include opacity(0);
+		// @include opacity(0);
 		@include transition(opacity 0.3s);
 		@include breakpoint(1024px) {
 			padding-left: 20px;
@@ -133,7 +135,8 @@
 		p {
 			font-size: 1rem;
 			span {
-				display: inline-block;
+				// display: inline-block;
+				display: block;
 			}
 		}
 		button {

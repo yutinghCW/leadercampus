@@ -76,6 +76,7 @@
 			padding-right: 0px;
 		}
 		a.card-title {
+			display: block;
 			color: $white;
 			&:hover {
 				color: $light-blue;
@@ -84,6 +85,9 @@
 		p {
 			color: $gray-200;
 			@include lineclamp(3);
+			@include breakpoint(1024px) {
+				-webkit-line-clamp: 2;
+			}
 		}
 	}
 	a.btn {

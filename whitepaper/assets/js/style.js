@@ -32,14 +32,12 @@ $(function () {
 	$(".slick-center").slick({
 		// centerMode: true,
 		centerMode: false,
-		centerPadding: "0",
 		slidesToShow: 5,
 		responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
 					centerMode: false,
-					centerPadding: "0",
 					slidesToShow: 3,
 				},
 			},
@@ -47,7 +45,6 @@ $(function () {
 				breakpoint: 1024,
 				settings: {
 					centerMode: false,
-					centerPadding: "0",
 					slidesToShow: 1,
 				},
 			},
@@ -62,7 +59,7 @@ $(function () {
             if (speakerName == data[i]["speakerName"]) {
                 speaker += '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon-cancel"></i></button><div class="model-basic"><div class="model-img"><img src="assets/images/' + data[i]["speakerImg"];
                 speaker += '" alt="' + data[i]["speakerName"];
-                speaker += '"></div><div class="model-text"><h2 class=" my0">' + data[i]["speakerName"] + '<span>' + data[i]["speakerNameEng"];
+                speaker += '"></div><div class="model-text"><h2 class="mt0 mb5"><span>' + data[i]["speakerName"] + '</span><span>' + data[i]["speakerNameEng"];
                 speaker += '</span></h2><div class="h4 mt-d-0 mt-m-10 mb0">' + data[i]["speakerInfo"];
                 speaker += '</div></div></div><div class="model-detail mt30"><p class="my0">' + data[i]["speakerIntro"];
                 speaker += '</p></div>'
