@@ -93,8 +93,10 @@
 	display: block;
 	padding-left: 10px;
 	padding-right: 10px;
-	// @include opacity(0.5);
 	@include transition(transform 0.3s, opacity 0.3s);
+	@include breakpoint(max-width 1023px) {
+		@include opacity(0.5);
+	}
 	&.slick-current {
 		@include opacity(1);
 		~ .slick-slide {
@@ -112,7 +114,9 @@
 	.slick-img {
 		position: relative;
 		transform-origin: left center;
-		// @include scale(0.925);
+		@include breakpoint(max-width 1023px) {
+			@include scale(0.925);
+		}
 	}
 	.slick-text {
 		color: $white;
@@ -120,11 +124,13 @@
 		padding-right: 0;
 		line-height: 1.125;
 		text-align: center;
-		// @include opacity(0);
 		@include transition(opacity 0.3s);
 		@include breakpoint(1024px) {
 			padding-left: 20px;
 			padding-right: 20px;
+		}
+		@include breakpoint(max-width 1023px) {
+			@include opacity(0);
 		}
 		.h3 {
 			font-size: 2.25rem;
