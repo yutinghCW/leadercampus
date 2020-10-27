@@ -65,7 +65,23 @@ $(function () {
                 speaker += '</p></div>'
             }
         }
-        $('.modal-body').html(speaker);
+        $('#modal .modal-body').html(speaker);
+    });
+	$(".btn--logo").click(function() {
+        var logoName = $(this).data('name'),
+			logo = "";
+			console.log(logoName);
+        for (var i = 0; i < study.length; i++) {
+            if (logoName == study[i]["logoName"]) {
+                logo += '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon-cancel"></i></button><div class="model-basic model-basic-spc"><div class="model-img"><img src="assets/images/' + study[i]["logoImg"];
+                logo += '" alt="' + study[i]["logoName"];
+                logo += '"></div><div class="model-text"><h3 class="mt0 mb5"><span>' + study[i]["logoName"] + '</span><span>' + study[i]["logoNameEng"];
+                logo += '</span></h3></div></div><div class="model-detail mt30"><p class="my0">' + study[i]["logoIntro"];
+                logo += '</p></div>'
+            }
+		}
+		console.log(logo);
+        $('#logo .modal-body').html(logo);
     });
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();

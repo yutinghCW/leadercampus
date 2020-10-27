@@ -119,12 +119,6 @@
 		}
 	}
 	.slick-text {
-		color: $white;
-		padding-left: 0;
-		padding-right: 0;
-		line-height: 1.125;
-		text-align: center;
-		@include transition(opacity 0.3s);
 		@include breakpoint(1024px) {
 			padding-left: 20px;
 			padding-right: 20px;
@@ -132,23 +126,31 @@
 		@include breakpoint(max-width 1023px) {
 			@include opacity(0);
 		}
-		.h3 {
-			font-size: 2.25rem;
+	}
+}
+.slick-text {
+	color: $white;
+	padding-left: 0;
+	padding-right: 0;
+	line-height: 1.125;
+	text-align: center;
+	@include transition(opacity 0.3s);
+	.h3 {
+		font-size: 2.25rem;
+	}
+	.h5 {
+		font-size: 1.125rem;
+	}
+	p {
+		font-size: 1rem;
+		span {
+			// display: inline-block;
+			display: block;
 		}
-		.h5 {
-			font-size: 1.125rem;
-		}
-		p {
-			font-size: 1rem;
-			span {
-				// display: inline-block;
-				display: block;
-			}
-		}
-		button {
-			margin-left: auto;
-			margin-right: auto;
-		}
+	}
+	button {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .slick-arrow {
@@ -197,6 +199,26 @@
 		}
 		&::before {
 			content: $icon-right;
+		}
+	}
+}
+.slick-no-js {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	> div {
+		@include breakpoint(max-width 639px) {
+			width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			+ div {
+				margin-top: 40px;
+			}
+		}
+		@include breakpoint(640px) {
+			width: 33%;
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 	}
 }

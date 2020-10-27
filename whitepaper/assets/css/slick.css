@@ -139,17 +139,6 @@
     transform: scale(0.925, 0.925);
   }
 }
-.slick-initialized .slick-slide .slick-text {
-  color: #fff;
-  padding-left: 0;
-  padding-right: 0;
-  line-height: 1.125;
-  text-align: center;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
 @media (min-width: 1024px) {
   .slick-initialized .slick-slide .slick-text {
     padding-left: 20px;
@@ -162,19 +151,31 @@
     opacity: 0;
   }
 }
-.slick-initialized .slick-slide .slick-text .h3 {
+
+.slick-text {
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 1.125;
+  text-align: center;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.slick-text .h3 {
   font-size: 2.25rem;
 }
-.slick-initialized .slick-slide .slick-text .h5 {
+.slick-text .h5 {
   font-size: 1.125rem;
 }
-.slick-initialized .slick-slide .slick-text p {
+.slick-text p {
   font-size: 1rem;
 }
-.slick-initialized .slick-slide .slick-text p span {
+.slick-text p span {
   display: block;
 }
-.slick-initialized .slick-slide .slick-text button {
+.slick-text button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -243,6 +244,29 @@
 }
 .slick-arrow.slick-next::before {
   content: "";
+}
+
+.slick-no-js {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media (max-width: 639px) {
+  .slick-no-js > div {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slick-no-js > div + div {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 640px) {
+  .slick-no-js > div {
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=slick.css.map */

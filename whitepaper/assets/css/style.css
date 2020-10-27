@@ -2483,6 +2483,28 @@ footer p span {
 .modal-body .model-basic .model-text .h4 {
   font-size: 1rem;
 }
+.modal-body .model-basic.model-basic-spc {
+  flex-direction: column;
+}
+.modal-body .model-basic.model-basic-spc .model-img {
+  width: 90%;
+  max-width: 250px;
+}
+.modal-body .model-basic.model-basic-spc .model-text {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+.modal-body .model-basic.model-basic-spc .model-text h3 {
+  line-height: 1.125;
+}
+.modal-body .model-basic.model-basic-spc .model-text h3 span {
+  display: block;
+}
+.modal-body .model-basic.model-basic-spc .model-text h3 span:last-child {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
 .modal-body .model-detail {
   width: 100%;
   color: #666;
@@ -2545,7 +2567,7 @@ section.opening {
   padding-top: 0;
   overflow: hidden;
 }
-section.speaker {
+section.speaker, section.sponsor {
   overflow: hidden;
 }
 section#topic {

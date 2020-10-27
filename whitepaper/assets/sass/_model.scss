@@ -213,6 +213,28 @@
 				font-size: 1rem;
 			}
 		}
+		&.model-basic-spc {
+			flex-direction: column;
+			.model-img {
+				width: 90%;
+				max-width: 250px;
+			}	
+			.model-text {
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				h3 {
+					line-height: 1.125;
+					span {
+						display: block;
+						&:last-child {
+							font-size: 1.125rem;
+							font-weight: normal;
+						}
+					}
+				}	
+			}
+		}
 	}
 	.model-detail {
 		width: 100%;
