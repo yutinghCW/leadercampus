@@ -180,6 +180,9 @@
 			right: 0;
 			color: $white;
 			text-shadow: 0 0 10px $dark-blue, 0 0 10px $dark-blue;
+			span {
+				display: block;
+			}
 		}
 		img {
 			&.desktop {
