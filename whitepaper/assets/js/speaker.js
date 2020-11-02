@@ -36,7 +36,7 @@ var study = [
 	},
 	{
 		logoImg: "logo-aif@3x-100.jpg",
-		logoName: "財團法人人工智慧科技基金會簡介",
+		logoName: "財團法人人工智慧科技基金會",
 		logoNameEng: "Artificial Intelligence Foundationaif",
 		logoIntro: "人工智慧科技基金會（AIF）以促進產業之人工智慧科技提升、應用發展及社會永續為宗旨，以客製化訓練、知識推廣及專案服務，賦能企業建立自己的 AI 團隊，發揮既有優勢、提升價值並促進轉型。同時扮演產業與學術界的關鍵樞鈕，密切與企業及學術界合作，有效介接學術能量，讓台灣產業在這波 AI 浪潮中踩穩腳步，掌握轉型成長的最佳契機。",
 	}
