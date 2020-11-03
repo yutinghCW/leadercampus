@@ -30,21 +30,20 @@ $(function () {
 		offset: height/2,
 	});
 	$(".slick-center").slick({
-		// centerMode: true,
 		centerMode: false,
 		slidesToShow: 5,
 		responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
-					centerMode: false,
+					centerMode: true,
 					slidesToShow: 3,
 				},
 			},
 			{
 				breakpoint: 1024,
 				settings: {
-					centerMode: false,
+					centerMode: true,
 					slidesToShow: 1,
 				},
 			},

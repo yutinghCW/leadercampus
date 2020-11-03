@@ -283,6 +283,10 @@ img {
   clear: both;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .m0 {
   margin: 0px !important;
 }
@@ -3223,7 +3227,8 @@ section .edit-area p {
   }
 }
 .price-table .price-item {
-  width: calc((100% - 20px) / 2);
+  width: 100%;
+  text-align: center;
   min-width: 240px;
 }
 @media (min-width: 375px) {
@@ -3261,6 +3266,7 @@ section .edit-area p {
 .price-table .price-item .price-header .price {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   color: #fff;
   line-height: 1;
 }
@@ -3296,9 +3302,11 @@ section .edit-area p {
   z-index: 1;
 }
 .price-table .price-item .price-body .price-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  display: table;
+  text-align: left;
 }
 .price-table .price-item .price-body .price-list li {
   position: relative;

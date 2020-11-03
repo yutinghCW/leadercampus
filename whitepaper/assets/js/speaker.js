@@ -19,6 +19,20 @@ var data = [
 		speakerNameEng: "Frank Yeh",
 		speakerInfo: "大聯大控股執行長",
 		speakerIntro: "執行長葉福海在電子業耕耘超過 40 年，曾擔任宏碁股份有限公司副總經理及美商艾睿電子股份有限公司總經理。在他的領導下，大聯大於2015年開始數位轉型工程，推出以資料驅動（Data-Driven）為基礎的「大大網」，強化對上下游廠商資訊的掌握及彈性管理能力；同時提倡智能物流服務(LaaS)模式，協助客戶共同面對智慧製造的挑戰，期與產業共建大競合之生態系。<br/><br/>葉福海未來將持續推動「專注客戶、科技賦能、協同生態、共創時代」數位轉型心法，要為大聯大下一個 10 年奠定基石。",
+	},
+	{
+		speakerImg: "speaker-04_liu.jpg",
+		speakerName: "劉 鳳珍",
+		speakerNameEng: "Jane Liu",
+		speakerInfo: "天下雜誌學習事業群總經理",
+		speakerIntro: "曾任 Cheers 雜誌社長、總編輯。長年關注企業人才管理、新世代與國際高等教育議題，近年致力將台灣各領域標竿人物的實務經轉化成系統性影音課程產品。2020 年底天下學習事業群成立，涵蓋集團兩大線上學習產品：天下創新學院、MasterCheers 大師影音課，以及關注青年人才能力發展的 Cheers 雜誌，將整合線上到線下的培訓服務，協助企業提升人才競爭力。",
+	},
+	{
+		speakerImg: "speaker-05_chen.jpg",
+		speakerName: "陳 來助",
+		speakerNameEng: "Lai Ju Chen",
+		speakerInfo: "台灣數位企業總會理事長",
+		speakerIntro: "",
 	}
 ];
 var study = [

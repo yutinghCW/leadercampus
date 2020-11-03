@@ -94,7 +94,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	@include transition(transform 0.3s, opacity 0.3s);
-	@include breakpoint(max-width 1023px) {
+	@include breakpoint(max-width 1199px) {
 		@include opacity(0.5);
 	}
 	&.slick-current {
@@ -114,16 +114,16 @@
 	.slick-img {
 		position: relative;
 		transform-origin: left center;
-		@include breakpoint(max-width 1023px) {
+		@include breakpoint(max-width 1199px) {
 			@include scale(0.925);
 		}
 	}
 	.slick-text {
-		@include breakpoint(1024px) {
+		@include breakpoint(1200px) {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
-		@include breakpoint(max-width 1023px) {
+		@include breakpoint(max-width 1199px) {
 			@include opacity(0);
 		}
 	}
@@ -206,6 +206,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
+    justify-content: center;
 	> div {
 		@include breakpoint(max-width 639px) {
 			width: 200px;

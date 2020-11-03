@@ -21,7 +21,9 @@
 		}
 	}
 	.price-item {
-		width: calc((100% - 20px) / 2);
+		// width: calc((100% - 20px) / 2);
+		width: 100%;
+		text-align: center;
 		min-width: 240px;
 		@include breakpoint(375px) {
 			min-width: 275px;
@@ -49,6 +51,7 @@
 			.price {
 				display: flex;
 				align-items: flex-end;
+				justify-content: center;
 				color: $white;
 				line-height: 1;
 			}
@@ -81,7 +84,9 @@
 				z-index: 1;
 			}
 			.price-list {
-				@include list(0, 0, none);
+				@include list(0 auto, 0, none);
+				display: table;
+				text-align: left;
 				li {
 					position: relative;
 					padding-left: 1.5em;
