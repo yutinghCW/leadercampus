@@ -256,9 +256,11 @@
 	}
 	.modal-dialog-scrollable {
 		max-height: calc(100% - 3.5rem);
+	    margin: 1.25rem auto;
 	}
 	.modal-dialog-scrollable .modal-content {
 		max-height: calc(100vh - 3.5rem);
+	    margin: 1.25rem auto;
 	}
 	.modal-dialog-centered {
 		min-height: calc(100% - 3.5rem);

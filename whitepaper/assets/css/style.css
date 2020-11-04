@@ -2529,10 +2529,12 @@ footer p span {
 
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
+    margin: 1.25rem auto;
   }
 
   .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem);
+    margin: 1.25rem auto;
   }
 
   .modal-dialog-centered {
@@ -2870,6 +2872,7 @@ section .edit-area p {
 }
 @media (min-width: 768px) {
   .visual__background .standard-text {
+    min-width: 60%;
     padding: 20px;
   }
 }
@@ -2911,7 +2914,7 @@ section .edit-area p {
     transform: translate(-50%, -50%) scale(3.54286, 1);
   }
 }
-.visual__background .standard-text .h4 {
+.visual__background .standard-text .h3 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -2919,7 +2922,7 @@ section .edit-area p {
   color: #fff;
   text-shadow: 0 0 10px #004977, 0 0 10px #004977;
 }
-.visual__background .standard-text .h4 span {
+.visual__background .standard-text .h3 span {
   display: block;
 }
 .visual__background .standard-text img.desktop {

@@ -142,6 +142,7 @@
 		@include translate(-50%, -50%);
 		z-index: 2;
 		@include breakpoint(768px) {
+			min-width: 60%;
 			padding: 20px;
 		}
 		@include breakpoint(max-width 767px) {
@@ -173,7 +174,7 @@
 				@include transform(translate(-50%, -50%) scale(3.54285714, 1));
 			}
 		}
-		.h4 {
+		.h3 {
 			position: absolute;
 			top: 100%;
 			left: 0;
