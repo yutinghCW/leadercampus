@@ -162,26 +162,30 @@ header .header_content > a {
 header .srhblock {
 	display: inline-block;
 	vertical-align: middle;
-	width: 600px;
+	width: 550px;
 }
 header .srhblock > p {
-	padding: 3px 5px;
+	padding: 3px 0;
 	background: #FFF;
-	font-size: 14px;
+	font-size: 0;
+    line-height: normal;
+}
+header .srhblock > p > * {
+	font-size: 0.875rem;
 	line-height: 20px;
 }
 header .srhblock > p span {
 	display: table;
 	margin: 5px auto;
 	color: #da000d;
-	font-size: 14px;
-	line-height: 20px;
+}
+header .srhblock > p i {
+	display: inline-block;
+	font-style: normal;
 }
 header .srhblock > p a {
-	font-size: 14px;
-	line-height: 20px;
 	display: inline-block;
-	margin: 0 4px;
+	margin: 0 8px 0 0;
 }
 header .srhblock > p a:hover {
 	text-decoration: underline;
@@ -256,6 +260,9 @@ header .member .in figcaption span a {
 	font-size: 14px;
 	line-height: 20px;
 	color: #727272;
+}
+header .member .in figcaption span a.highlight {
+	color: #da000d;;
 }
 header .member .in figcaption span a:hover {
 	text-decoration: underline;
