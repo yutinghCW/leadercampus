@@ -28,11 +28,11 @@ var data = [
 		speakerIntro: "曾任 Cheers 雜誌社長、總編輯。長年關注企業人才管理、新世代與國際高等教育議題，近年致力將台灣各領域標竿人物的實務經驗轉化成系統性影音課程產品。2020 年底天下學習事業群成立，涵蓋集團兩大線上學習產品：天下創新學院、MasterCheers 大師影音課，以及關注青年人才能力發展的 Cheers 雜誌，將整合線上到線下的培訓服務，協助企業提升人才競爭力。",
 	},
 	{
-		speakerImg: "speaker-05_chen.jpg",
-		speakerName: "陳 來助",
-		speakerNameEng: "Lai Ju Chen",
+		speakerImg: "speaker-05_wu.jpg",
+		speakerName: "吳 建宏",
+		speakerNameEng: "Hong Wu",
 		speakerInfo: "台灣數位企業總會理事長",
-		speakerIntro: "",
+		speakerIntro: "吳建宏 (Hong Wu) 是台灣 IBM 全球企業諮詢服務事業群總經理，負責行業顧問服務的策略、規劃、與執行，從事顧問服務工作已經超過18年，擅長策略規劃、數位科技、設計思考、敏捷創新、認知自動化、雲端科技等領域。<br/><br/>其領導的 Bank 4.0 數位金融團隊，協助國內領先金融機構進行數位轉型規劃、全通路客戶體驗設計、API 平台經濟、區塊鏈生態圈、大數據資料架構、人工智慧自動化、核心現代化、雲端轉型藍圖規劃、反洗錢建置…等。<br/><br/>曾榮獲 Best of IBM 及多次 IBM Taiwan Value Role Model 的榮譽，其專業顧問服務深獲客戶與公司肯定。同時擁有美國賓州州立大學企業管理碩士  (MBA, Pennsylvania State University)以及國立中央大學資訊管理學系學位 (BA, Information Management, National Central University)。",
 	}
 ];
 var study = [
