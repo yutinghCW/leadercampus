@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "tw-cen-mt";
+  src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.mymember {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+.mymember:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.md_forms {
+  padding: 12px;
+}
+.md_forms .back a {
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_forms .btitle {
+  text-align: center;
+  margin: 20px 0;
+}
+/* 201910 新增資料下載 start */
+.md_forms .btitle2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size:24px;
+}
+div.hide {
+    display: none;
+}
+/* 201910 新增資料下載 end */
+.md_forms .warning {
+  text-align: center;
+}
+.md_forms .other {
+  margin: 12px auto;
+  width: 85%;
+  max-width: 400px;
+}
+.md_forms .other p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_forms .center {
+  text-align: center;
+  margin: 12px auto;
+}
+.md_forms ul.fmenu {
+  text-align: center;
+}
+.md_forms ul.fmenu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.md_forms ul.fmenu li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #a0a0a0;
+}
+.md_forms ul.fmenu li a:hover {
+  text-decoration: underline;
+}
+.md_forms ul.fmenu li + li:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "|";
+  font-size: 14px;
+  line-height: 10px;
+  color: #a0a0a0;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.forms {
+  max-width: 325px;
+  margin: auto;
+  width: 85%;
+}
+.forms input[type=text], .forms input[type=password], .forms textarea {
+  outline: none;
+  border-radius: 20px;
+  color: #a0a0a0;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+textarea {
+    resize: none;
+}
+.forms .rbtn {
+  width: 100%;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+.forms p {
+  text-align: center;
+}
+.forms p input[type=checkbox], .forms p span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+}
+.forms .account {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.askblock {
+  margin: auto;
+  width: 800px;
+}
+.askblock .forms {
+  max-width: 100%;
+}
+.askblock textarea {
+  min-height: 120px;
+}
+.askblock .checkcode input {
+  display: inline-block;
+  width: auto;
+}
+
+.mymember {
+  box-sizing: border-box;
+  padding: 20px 0px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.mymember .in {
+  position: relative;
+  width: 47.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+/*新增*/
+.mymember .datepicker {
+  position:relative;
+  width:100%;
+  text-align: center;
+}
+.mymember .datepicker figcaption {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mymember .datepicker figcaption .picker input{
+  margin-right:30px;
+}
+.button_filter {
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	background-color: white;
+    color: #AAAAAA;
+    border: 2px solid #AAAAAA;
+	cursor:pointer;
+}
+.button_filter:hover {
+    background-color: #AAAAAA;
+	color: #FFFFFF;
+}
+/*新增end*/
+.mymember .in figure {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mymember .in figure img {
+  max-width: 65px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  margin: auto;
+}
+.mymember .in figcaption {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mymember .in figcaption > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mymember .in figcaption .my {
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0 15px;
+  text-align: center;
+}
+.mymember .in figcaption .my a {
+  display: block;
+  background: #eee;
+  padding: 0px 15px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.mymember .in figcaption .my a:hover {
+  background: #bfbfbf;
+}
+.mymember .in figcaption .info p, .mymember .in figcaption .info span {
+  color: #727272;
+}
+.mymember .purview {
+  width: 47.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.mymember .purview ul li {
+  width: 47.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.mymember .purview ul li * {
+  color: #727272;
+}
+
+.myprocess {
+  padding: 15px 0 0px 0;
+}
+.myprocess > div {
+  width: 47.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.myprocess ul {
+  text-align: center;
+}
+.myprocess ul li {
+  padding: 0 2%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.myprocess ul li + li {
+  position: relative;
+}
+.myprocess ul li + li:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 80%;
+  left: 0;
+  top: 10%;
+  background: #eee;
+}
+.myprocess ul.info li {
+  width: 23%;
+  font-size: 48px;
+  line-height: 60px;
+}
+.myprocess ul.info li a {
+  font-size: 48px;
+  line-height: 60px;
+  display: block;
+  font-family: "tw-cen-mt";
+}
+.myprocess ul.info li a:hover {
+  color: #da000d;
+}
+.myprocess ul.info li a:hover span {
+  text-decoration: underline;
+}
+.myprocess ul.info li span {
+  font-family: "Century Gothic", "Microsoft JhengHei", "Apple LiGothic Medium", "PMingLiU", "sans-serif", "serif";
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+}
+.myprocess ul.total {
+  padding: 12px 0;
+}
+.myprocess ul.total li {
+  width: 48%;
+  text-align: right;
+}
+.myprocess ul.total li div {
+  text-align: left;
+}
+.myprocess ul.total li b {
+  font-size: 48px;
+  line-height: 60px;
+  font-family: "tw-cen-mt";
+}
+.myprocess ul.total li span {
+  padding-left: 3px;
+}
+.myprocess .myspider {
+  padding-top: 15px;
+}
+.myprocess .myspider #spiderweb * {
+  font-size: 14px;
+  line-height: 20px;
+}
+.myprocess .myspider #spiderweb * .highcharts-title tspan {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.tab_content#mydata > ul, .tab_content .md_forms {
+  padding: 25px 0;
+}
+.tab_content .center {
+  text-align: center;
+}
+
+#mydata {
+  padding: 0 24px;
+  margin: auto;
+}
+#mydata ul {
+  text-align: center;
+}
+#mydata ul li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-bottom: 12px;
+  width: 390px;
+}
+#mydata ul li + li {
+  width: 255px;
+}
+#mydata ul li b {
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+#mydata ul li span {
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  word-break: break-all;
+  word-wrap: break-word;
+}

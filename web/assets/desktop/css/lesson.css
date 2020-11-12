@@ -1,0 +1,853 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "tw-cen-mt";
+	src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.lessons, .getscore, .gotest, .coming {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+.lessons:after, .getscore:after, .gotest:after, .coming:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.lessons .lesson {
+	margin: 50px 0;
+}
+.lessons .morelesson {
+	margin: 20px auto 40px;
+}
+.lessons .morelesson a {
+	padding: 5px;
+}
+.lessons .mbanner {
+	position: relative;
+	margin-top: 10px;
+}
+.lessons .mbanner > a {
+	display: block;
+}
+.lessons .mbanner figure {
+	padding-bottom: 31.9%;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.lessons .mbanner figcaption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 30px 0px 30px;
+	z-index: 1;
+}
+.lessons .mbanner figcaption:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+	background-size: 100%;
+	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(50%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
+	background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+	left: 0;
+	top: 0;
+}
+.lessons .mbanner figcaption p {
+	position: relative;
+	color: #FFF;
+	text-align: center;
+	margin: 10px 0;
+	font-size: 40px;
+	line-height: 50px;
+}
+.lessons .mbanner figcaption p + p {
+	font-size: 16px;
+	line-height: 20px;
+}
+.lessons .title {
+	margin: 20px 0;
+}
+.lessons .title h1 {
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.lessons .title > div > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.lessons .title > div > p span {
+	display: block;
+	border: #bfbfbf 1px solid;
+	padding: 5px 8px;
+}
+
+/* 2020/4/22 新增*/
+.lessons .title > div .additional_purchase_activate{
+	margin-left:20px;
+}
+.lessons .title > div .additional_purchase_activate span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #da000d 1px solid;
+	padding: 5px 8px;
+	color:#ffffff;
+	background-color:#da000d;
+}
+.lessons .title > div .additional_purchase_deactivate{
+	margin-left:20px;
+}
+.lessons .title > div .additional_purchase_deactivate span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #da000d 1px solid;
+	padding: 5px 8px;
+	color:#da000d;
+	background-color:#ffffff;
+}
+.lessons .title > div .normal{
+	margin-left:20px;
+}
+.lessons .title > div .normal span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #bfbfbf 1px solid;
+	padding: 5px 8px;
+	color:#bfbfbf;
+	background-color:#ffffff;
+}
+
+/* 2020/4/22 新增 end*/
+.lessons .title > div .info {
+	float: right;
+}
+.lessons .title > div .info span, .lessons .title > div .info a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.lessons .title > div .info span {
+	margin-right: 5px;
+	background: #a0a0a0;
+	color: #FFF;
+	padding: 2px 5px;
+}
+.lessons ul.mlesson li {
+	border-top: 1px solid #eee;
+	padding: 10px 0;
+}
+.lessons ul.mlesson li h2 {
+	margin: 10px 0;
+	font-size: 26px;
+	line-height: 30px;
+}
+.lessons ul.mlesson li h2 span {
+	float: right;
+	color: #a5a5a5;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+}
+.lessons ul.mlesson li h2.inbl {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	width: auto;
+}
+.lessons ul.mlesson li > span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	background: #eee;
+	border: 1px solid #b5b5b5;
+	color: #000;
+	padding: 0px 5px;
+}
+.lessons ul.mlesson li > div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.lessons ul.mlesson li input {
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0px;
+	background: #eee;
+	border: none;
+	padding: 3px 5px;
+}
+.lessons ul.mlesson li input::-webkit-input-placeholder {
+	color: #000;
+}
+.lessons ul.mlesson li input::-moz-placeholder {
+	color: #000;
+}
+.lessons ul.mlesson li input:-ms-input-placeholder {
+	color: #000;
+}
+.lessons ul.mlesson li input:-moz-placeholder {
+	color: #000;
+}
+.lessons ul.core li {
+	padding: 0 0 20px 0;
+}
+.lessons ul.core li > span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	background: #eee;
+	border: 1px solid #b5b5b5;
+	color: #000;
+	padding: 0px 5px;
+}
+.lessons .md_master .intro {
+	padding: 15px 20px 15px 20px;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.lessons .md_master .intro figure {
+	width: 18.75%;
+	float: left;
+	margin-left: 1.04167%;
+	margin-right: 1.04167%;
+}
+.lessons .md_master .intro figcaption {
+	width: 77.08333%;
+	float: left;
+	margin-left: 1.04167%;
+	margin-right: 1.04167%;
+}
+.lessons .md_master .intro figcaption b {
+	display: inline-block;
+}
+.lessons .md_master .intro figcaption b + b {
+	margin-left: 10px;
+}
+.lessons .md_master .subchannel_intro {
+	padding: 15px 20px 15px 20px;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.lessons .md_master .subchannel_intro figure {
+	width: 18.75%;
+	float: left;
+	margin-left: 1.04167%;
+	margin-right: 1.04167%;
+}
+.lessons .md_master .subchannel_intro figcaption {
+	width: 77.08333%;
+	float: left;
+	margin-left: 1.04167%;
+	margin-right: 1.04167%;
+}
+.lessons .md_master .subchannel_intro figcaption {
+	width: 77.08333%;
+	float: left;
+	margin-left: 1.04167%;
+	margin-right: 1.04167%;
+}
+
+.lessons .md_master .subchannel_intro figcaption span {
+	display: inline-block;
+    font-size: 26px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.lessons .md_master .subchannel_intro figcaption p{
+	text-align: left;
+	padding: 5px 0;
+}
+
+.md_master .subchannel_intro {
+	background: #eee;
+	position: relative;
+	padding: 15px 20px 9px 20px;
+	box-sizing: border-box;
+	height: 405px;
+}
+.md_master .subchannel_intro figcaption {
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.md_master .subchannel_intro figcaption b {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+.th_com .md_master {
+	margin-bottom: 35px;
+}
+.md_master .intro {
+	background: #eee;
+	position: relative;
+	padding: 15px 20px 9px 20px;
+	box-sizing: border-box;
+	height: 405px;
+}
+.md_master .intro figcaption {
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.md_master .intro figcaption b {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+.md_master .intro p {
+	text-align: center;
+	padding: 5px 0;
+}
+.md_master .intro span {
+	display: block;
+	font-size: 14px;
+	line-height: 22px;
+}
+/* 20181116 新增 */
+.md_master .intro_about {
+	background: #eee;
+	position: relative;
+	padding: 15px 20px 9px 20px;
+	box-sizing: border-box;
+	height: 405px;
+}
+.md_master .intro_about figcaption {
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.md_master .intro_about figcaption b {
+	display: block;
+	margin: 5px 0;
+	font-size: 22px;
+	line-height: 30px;
+}
+.md_master .intro_about p {
+	text-align: center;
+	padding: 5px 0;
+}
+.md_master .intro_about span {
+	display: block;
+	font-size: 18px;
+    line-height: 22px;
+}
+span.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* 20181116 新增 end*/
+.lesson_top {
+	display: inline-block;
+	width: 100%;
+}
+.lesson_top .sbanner {
+	margin: auto;
+	padding-bottom: 10px;
+}
+.lesson_top .sbanner > div {
+	display: table;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+.lesson_top .sbanner .azuremediaplayer {
+	margin:50px auto;
+}
+.lesson_top .sbanner > div img {
+	margin: auto;
+}
+.lesson_top .sbanner > div + div {
+	margin-top: 10px;
+}
+.lesson_top .sbanner > div embed,
+.lesson_top .sbanner > div object {
+	display: none;
+}
+.lesson_top > p {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	color: #a5a5a5;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.lesson_top > p b {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+.lesson_top > p span {
+	color: #a5a5a5;
+	float: right;
+}
+
+.lesson .lesonbar {
+	padding: 20px 0 10px 0;
+}
+.lesson .lesonbar a.listen {
+	display: inline-block;
+	border: #bfbfbf 1px solid;
+	padding: 5px 8px;
+}
+.lesson .lesonbar a.listen:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 18px;
+	height: 15px;
+	background-image: url("../images/listenicon.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-top: -3px;
+	margin-right: 3px;
+}
+.lesson .lesonbar a.listen:hover {
+	border: 1px solid #eee;
+	background: #eee;
+}
+.lesson .lesonbar a.fontSize {
+	float: right;
+	border: 1px solid #a0a0a0;
+	border-radius: 50%;
+}
+.lesson .lesonbar a.fontSize:hover {
+	border: 1px solid #eee;
+	background: #eee;
+}
+.lesson > div:nth-child(2).fzp p:nth-of-type(1) {
+	color: #da000d;
+}
+.lesson .lesonfoot {
+	padding: 12px 0;
+}
+.lesson .lesonfoot:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.lesson .lesonfoot > a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.lesson .lesonfoot > a:hover {
+	text-decoration: underline;
+}
+.lesson .lesonfoot > a:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-image: url(../images/askicon.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-right: 6px;
+}
+.lesson .lesonfoot span {
+	float: right;
+	margin-top: -10px;
+}
+.lesson .lesonfoot span > a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.lesson .lesonfoot span > a:hover img {
+	opacity: 0.8;
+}
+.lesson .lesonfoot span img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fz p, .fz0 p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.fz1 p {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.fz2 p {
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.getscore {
+	border-bottom: 1px solid #eee;
+}
+.getscore ul {
+	text-align: center;
+	margin: 12px auto;
+	padding: 12px 0;
+}
+.getscore ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+.getscore ul li a img {
+	max-width: 36px;
+}
+.getscore ul li a:hover img {
+	opacity: 0.8;
+}
+.getscore p {
+	text-align: center;
+	margin: 8px auto;
+}
+.getscore .bstar {
+	text-align: center;
+	margin: 0px auto;
+}
+.getscore .bstar img {
+	max-width: 36px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+.getscore .md_score a.slider {
+	display: table;
+	margin: 5px auto;
+	width: auto;
+}
+.getscore .md_score p {
+	padding: 12px 0;
+}
+.getscore .md_score .intro {
+	display: none;
+	background: #eee;
+	padding: 12px 0;
+}
+.getscore .md_score .intro .forms {
+	text-align: center;
+}
+.getscore .md_score .intro .forms a {
+	display: inline-block;
+	margin: 5px;
+	border: #535353 1px solid;
+	border-radius: 20px;
+	padding: 6px 12px;
+	color: #da000d;
+}
+.getscore .md_score .intro .forms a:hover {
+	border: #da000d 1px solid;
+	background: #da000d;
+	color: #FFF;
+}
+
+.gotest {
+	margin: 20px auto;
+}
+.gotest p {
+	text-align: center;
+	font-size: 26px;
+	line-height: 30px;
+	padding: 6px 0;
+}
+.gotest a.rbtn {
+	width: auto;
+	margin: 5px auto;
+	text-decoration: none;
+}
+.gotest a {
+	display: table;
+	margin: auto;
+	text-decoration: underline;
+}
+.gotest a:hover {
+	text-decoration: none;
+}
+.gotest span {
+	display: table;
+	margin: 8px auto;
+	background: #eee;
+	padding: 3px 5px;
+}
+.gotest input.rbtn {
+	width: auto;
+	margin: 5px auto;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.md_teacher {
+	background: #eee;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 12px;
+	margin: 12px 0;
+}
+.md_teacher .bar {
+	padding: 12px 0;
+}
+.md_teacher .bar b {
+	font-size: 26px;
+	line-height: 30px;
+}
+.md_teacher .bar a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding-right: 15px;
+	position: relative;
+}
+.md_teacher .bar a:hover b, .md_teacher .bar a:hover span, .md_teacher .bar a:hover :before, .md_teacher .bar a:hover :after {
+	color: #535353;
+}
+.md_teacher .bar a > span {
+	float: right;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	font-size: 26px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	opacity: 1;
+}
+.md_teacher .bar a > span:before, .md_teacher .bar a > span:after {
+	position: absolute;
+	content: "";
+	right: 0px;
+	top: 14px;
+	width: 11px;
+	height: 1px;
+	background: #000;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.md_teacher .bar a > span:after {
+	top: 9px;
+	right: 5px;
+	width: 1px;
+	height: 11px;
+}
+.md_teacher .bar a > span + span {
+	display: none;
+	opacity: 0;
+}
+.md_teacher .bar a.show span {
+	display: none;
+	opacity: 0;
+}
+.md_teacher .bar a.show span + span {
+	display: inline-block;
+	vertical-align: top;
+	opacity: 1;
+}
+.md_teacher .bar a.show span:after {
+	display: none;
+}
+.md_teacher .intro {
+	display: none;
+	position: relative;
+	padding-bottom: 12px;
+}
+.md_teacher .intro figure {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.md_teacher .intro figure img {
+	max-width: 100px;
+}
+.md_teacher .intro figcaption {
+	min-height: 100px;
+	padding-left: 115px;
+}
+.md_teacher .intro p {
+	text-align: center;
+	padding: 5px 0;
+}
+.md_teacher .intro .forms input {
+	background: #FFF;
+}
+
+.md_translate {
+	margin: 20px 0;
+	border: #bfbfbf 1px solid;
+	padding: 0 12px;
+}
+.md_translate .bar a {
+	display: block;
+	line-height: 20px;
+	padding: 12px 32px  12px 8px;
+	text-align: center;
+	position: relative;
+}
+.md_translate .bar a:hover {
+	color: #535353;
+}
+.md_translate .bar a:hover:before, .md_translate .bar a:hover:after {
+	background: #535353;
+}
+.md_translate .bar a:before, .md_translate .bar a:after {
+	position: absolute;
+	content: "";
+	right: 50%;
+	margin-right: -70px;
+	top: 21px;
+	width: 11px;
+	height: 1px;
+	background: #000;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 1;
+}
+.md_translate .bar a:after {
+	top: 16px;
+	margin-right: -65px;
+	width: 1px;
+	height: 11px;
+}
+.md_translate .bar a.show:after {
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0;
+}
+.md_translate .intro {
+	display: none;
+	padding-bottom: 12px;
+}
+.md_translate .intro p {
+	margin-bottom: 5px;
+}
+
+.md_point {
+	padding: 12px 0;
+}
+.md_point ul li {
+	text-indent: -0.65em;
+	margin-left: 2em;
+	margin-bottom: 5px;
+}
+.md_point ul li:before {
+	display: inline-block;
+	content: "✓";
+	margin-right: 3px;
+	color: #da000d;
+}
+
+.md_otherlesn {
+	padding: 12px;
+}
+.md_otherlesn ul li {
+	font-size: 14px;
+	line-height: 20px;
+	text-indent: -9px;
+	margin-left: 9px;
+	margin-bottom: 5px;
+}
+.md_otherlesn ul li:before {
+	display: inline-block;
+	content: "";
+	margin-right: 2px;
+	margin-right: 10px;
+	background-image: url(../images/redicon.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 10px;
+}
+
+.coming {
+	padding: 12px;
+	margin: 12px auto;
+	box-sizing: border-box;
+}
+.coming span {
+	margin: 0 15px 0 10px;
+	display: inline-block;
+	color: #FFF;
+	background: #da000d;
+	position: relative;
+	padding: 0 4px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.coming span:before, .coming span:after {
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+.coming span:before {
+	left: -10px;
+	border-width: 0 0 30px 10px;
+	border-color: transparent transparent #da000d transparent;
+}
+.coming span:after {
+	right: -10px;
+	border-width: 30px 10px 0 0;
+	border-color: #da000d transparent transparent transparent;
+}
+/* 20190827 add course more start*/
+.course_more {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-top: 1px solid #888;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.course_more_content a .title {
+	background: #da000d;
+	border: 1px solid #da000d;
+	color: #FFF;
+	display: inline-block;
+	line-height: 2;
+	align-items: center;
+	padding: 3px 15px ;
+	padding-left: 16px;
+	font-size: 18px;
+}
+.course_more_content a .title:hover {
+	background-color: #0000;
+	border: 1px solid #da000d;
+	color: #da000d;
+}
+.course_more_content--pre {
+	float: left;
+	width:45%;
+}
+.course_more_content--next {
+	float: right;
+	text-align: right;
+	width:45%;
+}
+/* 20190827 add course more end*/
+/*# sourceMappingURL=lesson.css.map */

@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "tw-cen-mt";
+  src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.md_forms {
+  padding: 0 12px;
+}
+.md_forms .back a {
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_forms h3.btitle {
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+/* 201910 新增資料下載 start */
+.md_forms .btitle2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size:20px;
+}
+div.hide {
+    display: none;
+}
+/* 201910 新增資料下載 end */
+.md_forms .warning {
+  margin: auto;
+  width: 85%;
+}
+.md_forms .warning p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #d70c19;
+  margin-bottom: 15px;
+}
+.md_forms .other {
+  margin: 6px auto;
+  width: 85%;
+}
+.md_forms .other p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_forms .center {
+  text-align: center;
+}
+.md_forms ul.fmenu {
+  text-align: center;
+}
+.md_forms ul.fmenu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.md_forms ul.fmenu li a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #a0a0a0;
+}
+.md_forms ul.fmenu li + li:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "|";
+  font-size: 11px;
+  line-height: 10px;
+  color: #a0a0a0;
+  margin-right: 5px;
+}
+
+.forms {
+  margin: auto;
+  width: 85%;
+}
+.forms input[type=text], .forms input[type=password], .forms textarea {
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  color: #a0a0a0;
+  background-color: #eee;
+  text-align: left;
+  padding: 5px 20px;
+  width: 90%;
+  max-width: 90%;
+  margin: auto;
+  margin: 10px 0;
+}
+textarea {
+    resize: none;
+}
+.forms input[type="submit"].rbtn {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+}
+.forms p {
+  text-align: center;
+}
+.forms p input[type=checkbox], .forms p span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+}
+.forms .account {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.mymember {
+  padding: 20px 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.mymember .in {
+  position: relative;
+}
+.mymember .in figure {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -45px;
+  z-index: 1;
+}
+.mymember .in figure img {
+  max-width: 50px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+  box-sizing: border-box;
+  margin: auto;
+}
+.mymember .in figure a {
+  font-size: 14px;
+  line-height: 20px;
+  background: #eee;
+  border: #e5e5e5 1.5px solid;
+  border-radius: 10px;
+  padding: 4px 12px;
+  display: table;
+  margin: 8px auto;
+}
+.mymember .in figcaption {
+  position: relative;
+  padding-left: 120px;
+  min-height: 92px;
+}
+.mymember .in figcaption div {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+.mymember .in figcaption p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.mymember .in figcaption p span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #727272;
+}
+
+.myprocess ul {
+  text-align: center;
+}
+.myprocess ul li {
+  padding: 0 2%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.myprocess ul li + li {
+  position: relative;
+}
+.myprocess ul li + li:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 80%;
+  left: 0;
+  top: 10%;
+  background: #eee;
+}
+.myprocess ul.info li {
+  width: 23%;
+  font-size: 32px;
+  line-height: 40px;
+}
+.myprocess ul.info li a {
+  font-size: 32px;
+  line-height: 40px;
+  display: block;
+}
+.myprocess ul.info li span {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+.myprocess ul.total {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.myprocess ul.total li {
+  width: 48%;
+  text-align: right;
+}
+.myprocess ul.total li div {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+.myprocess ul.total li b {
+  font-size: 32px;
+  line-height: 40px;
+}
+.myprocess ul.total li span {
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 3px;
+}
+.myprocess .myspider {
+  padding: 20px 5px;
+}
+.myprocess .myspider #spiderweb * {
+  font-size: 14px;
+  line-height: 20px;
+}
+.myprocess .myspider #spiderweb * .highcharts-title tspan {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tab_content#mydata > ul, .tab_content .md_forms {
+  padding: 25px 0;
+}
+.tab_content .center {
+  text-align: center;
+}
+
+#mydata {
+  padding: 0 24px;
+  margin: auto;
+  max-width: 320px;
+}
+#mydata ul li {
+  margin-bottom: 12px;
+}
+#mydata ul li b {
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+#mydata ul li span {
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  word-break: break-all;
+  word-wrap: break-word;
+}

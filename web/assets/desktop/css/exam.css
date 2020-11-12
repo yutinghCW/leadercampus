@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "tw-cen-mt";
+  src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.tests {
+  padding: 0 12px;
+}
+.tests h2 {
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.tests ul.qs {
+  margin: 12px 0;
+}
+.tests ul.qs > li {
+  border-bottom: 1px solid #eee;
+}
+.tests ul.qs > li + li {
+  margin-top: 24px;
+}
+.tests ul.qs > li b {
+  display: block;
+  margin-bottom: 12px;
+}
+.tests ul.qs ol {
+  padding: 12px;
+}
+.tests ul.qs ol li + li {
+  margin-top: 12px;
+}
+.tests ul.qs ol li input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tests .sendtest {
+  margin: 12px auto 25px auto;
+  width: 30%;
+  display: table;
+}

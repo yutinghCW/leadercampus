@@ -1,0 +1,143 @@
+/* pad */
+
+@media screen and (max-width: 1112px) {
+	html, body {
+		min-width: auto;
+	}
+
+	main {
+		min-width: auto;
+	}
+}
+
+@media screen and (max-width: 768) {
+	.lessons {
+		margin: 0 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	html, body, main {
+		min-width: auto;
+	}
+	html *, html *:before, html *:after,
+	.lesson_top > p b {
+		font-size: 16px;
+	}
+	.lessons .title h1 {
+		font-size: 28px;
+	}
+	.sentences2 span {
+		width: auto;
+		padding: 40px;
+		font-size: 18px;
+	}
+	.sentences2 span:before {
+		left: 25px;
+	}
+	.sentences2 span:after {
+		right: 25px;
+	}
+	.course-content {
+		padding: 12px 0;
+	}
+	.lesson .lessons {
+		margin: 30px 15px;
+	}
+	.lesson .sentences2,
+	.lesson_top .sbanner {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.lesson .lesonfoot span {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.lesson .lesonfoot span img {
+		width: 90px;
+	}
+	.lessons .md_master .intro figure {
+		float: none;
+		width: 25%;
+		margin: 0 auto 1em;
+	}
+	.lessons .md_master .intro figure img {
+		height: auto;
+	}
+	.lessons .md_master .intro figcaption {
+		float: none;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	.lessons .md_master .intro figcaption b {
+		line-height: 1.5;
+	}
+	.th_com {
+		margin: 50px 15px;
+	}
+	.md_point ul li {
+		text-indent: calc(-1em - 6px);
+		margin-left: 1.75em;
+	}
+	.md_point ul li:before {
+		display: inline;
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.mygallery * {
+		box-sizing: border-box;
+	}
+	.tn3-gallery {
+		float: none !important;
+		width: 960px;
+		height: auto !important;
+		padding-top: calc(60.48387096774194% + 47px);
+	}
+	.tn3-image {
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		padding-top: 60.48387096774194%;
+	}
+	.mygallery.fullscreen .tn3-gallery,
+	.mygallery.fullscreen .tn3-image {
+		padding-top: 0;
+	}
+    .mygallery.fullscreen .tn3-gallery,
+    .mygallery.fullscreen .tn3-image {
+        height: 100vh !important;
+    }
+	.tn3-in-image, .tn3-image-ins, .tn3-image-in, .tn3-full-image {
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.tn3-in-image, .tn3-full-image {
+        top: 0 !important;
+		left: 0 !important;
+	}
+	.tn3-full-image img {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.tn3-controls-bg {
+		width: 100%;
+	}
+	.tn3-thumbs {
+		width: calc(100% - 203px);
+	}
+	.tn3-albums {
+		width: 960px;
+		height: 650px;
+	}
+	.tn3-inalbums {
+		width: 960px;
+		height: 585px;
+	}
+}

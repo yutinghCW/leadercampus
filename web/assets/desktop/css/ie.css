@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.lesson_top .sbanner > div video,
+.lesson_top .sbanner > div audio {
+	display: none;
+}
+.lesson_top .sbanner > div embed,
+.lesson_top .sbanner > div object {
+	display: block;
+}
+.sentences2 span:before {
+	background-image: url(../images/dodo01_ie.png);
+}
+.sentences2 span:after {
+	background-image: url(../images/dodo02_ie.png);
+}
+.lesson .course-content img {
+	max-width: 650px;
+    width: auto !important;
+	height: auto;
+}

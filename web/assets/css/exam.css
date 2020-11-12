@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "tw-cen-mt";
+  src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.tests {
+  padding: 0 12px;
+}
+.tests h5 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.tests ul.qs {
+  margin: 12px 0;
+}
+.tests ul.qs > li + li {
+  margin-top: 24px;
+}
+.tests ul.qs > li b {
+  display: block;
+  margin-bottom: 12px;
+}
+.tests ul.qs ol {
+  padding: 12px;
+}
+.tests ul.qs ol li + li {
+  margin-top: 12px;
+}
+.tests ul.qs ol li input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tests .sendtest {
+  margin: 12px auto;
+  width: 100%;
+  display: inline-block;
+}
+.tests .sendtest a {
+  max-width: 250px;
+  margin: auto;
+  display: block;
+  border: 1px solid #bfbfbf;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px;
+}
+ 
+.warning {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.warning p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #d70c19;
+  margin-bottom: 5px;
+}

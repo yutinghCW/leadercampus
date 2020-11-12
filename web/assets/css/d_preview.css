@@ -1,0 +1,490 @@
+.fieldcontainer
+{
+    text-align: left;
+    background: #fff;
+    position: relative;
+}
+form.surveyform
+{
+    font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Tahoma,sans-serif;
+    letter-spacing: .01em;
+    text-rendering: optimizeLegibility;
+}
+.xform
+{
+    width: 450px;
+
+}
+div.field
+{
+    display: block;
+    min-height: 30px;
+    padding: 10px 5px 10px 5px;
+    margin: 0px 5px 5px 5px;
+    clear: both;
+}
+div.field-labelblock
+{
+    display: block;
+    clear: both;
+}
+span.field-label
+{
+    float: left;
+    margin: 0px 0 5px 0;
+    font-size: 97%;
+    font-weight: 700;
+    color: #222;
+    line-height: 150%;
+}
+span.req
+{
+    color: red !important;
+    margin: 2px 0 0 2px;
+}
+div.field-content
+{
+    display: block;
+    clear: both;    
+}
+span.error
+{
+    display: none;
+    float: left;
+}
+div.formfield
+{
+    display: block;
+    min-height: 30px;
+    padding: 5px 5px 10px 5px;
+    margin: 5px 5px 5px 5px;
+    clear: both;
+    text-align: left;
+    background: #EFEFFF;
+}
+.formtitle
+{
+    font-weight: 700;
+    font-size: 160%;
+    clear: left;
+    margin: 0 0 5px;
+}
+.formdescription
+{
+    font-size: 100%;
+}
+li.sdescription
+{
+    margin: 5px 0 5px 0;
+}
+div.field-content input[type="text"]
+{
+    width: 250px;
+    padding: 5px 4px;
+    border: 1px solid #CCC;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+div.field-content input[type="password"]
+{
+    width: 250px;
+    border: 1px solid #CCC;
+    padding: 5px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+input[type="submit"]
+{
+    font-size: 13px;
+}
+div.field-content textarea
+{
+    width: 98%;
+    padding: 5px 4px;
+    border: 1px solid #CCC;
+    background: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+div.field-content select
+{
+    width: 258px;
+    border: 1px solid #CCC;
+    padding: 3px 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.formfooter
+{
+    position: relative;
+    padding: 5px;
+    margin: 5px 5px 15px 5px;
+    text-align: left;
+    height: 18px;
+}
+div.ValError
+{
+    color: Red;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+#ctlPrev
+{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+#ctlNext
+{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+div.confirmation
+{
+    display: block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    min-height: 100px;
+    text-align: center;
+    font-weight: 600;
+}
+#drawer
+{
+    background: #fff url(http://wmt.cw.com.tw/SurveyCollector/images/h80.png) repeat-x scroll 0 0;
+    _background-color: #fff;
+    overflow: visible;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: Red;
+    border-bottom: 2px solid #789;
+    width: 100%;
+    display: none;
+    z-index: 2;
+}
+ul.stitle
+{
+    padding: 0;
+    margin: 7px 12px 12px 11px;
+    border-bottom: 1px solid #e0e0e0;
+}
+ul.stitle li
+{
+    list-style-type: none;
+}
+li.stitle
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+table.scale-rating th
+{
+
+}
+table.scale-rating th, table.matrix-rating th
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 0 5px 5px 5px;
+}
+table.scale-rating td
+{
+    text-align: center;
+    border-top: 1px solid #A0A0A0;
+    padding: 10px 0;
+    width: 50px;
+    font-weight: bold;
+}
+table.matrix-rating
+{
+    min-width: 50%;
+}
+table.matrix-rating td.title
+{
+    text-align: left;
+    border-top: 1px solid #A0A0A0;
+    padding: 3px 0;
+}
+table.matrix-rating td
+{
+    text-align: center;
+    padding: 2px 0 6px 0;
+}
+table.matrix-rating a.rate-off
+{
+    padding: 12px 17px;
+    text-decoration: none;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 2px #606060;
+    -webkit-box-shadow: 0 1px 2px #606060;
+    box-shadow: 0 1px 2px #606060;
+    cursor: default;
+    display: inline-block;
+    background: #D6D6D6;
+    background-image: -moz-linear-gradient(top,#dadada,#ccc);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dadada),color-stop(1,#ccc));
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dadada',EndColorStr='#cccccc')";
+}
+table.matrix-rating a.rate-on
+{
+    display: inline-block;
+    height: 16px;
+    padding: 4px 17px;
+    text-decoration: none;
+    /*background: #9DC149 url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png) !important;*/
+    background: #9DC149 !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 55% !important;
+    /*background-image: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png),-webkit-gradient(linear,left top,left bottom,color-stop(0,#B8E055),color-stop(1,#9DC149)) !important;
+    background-image: background-image:url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png),-moz-linear-gradient(top,#B8E055,#9DC149) !important;*/
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: default;
+}
+table.matrix-rating a.rate-on:hover
+{
+    /*background: #9DC149 url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png) no-repeat 50% 50% !important;*/
+    background: #9DC149 no-repeat 50% 50% !important;
+}
+table.scale-rating a.rate-off
+{
+    padding: 3px 15px;
+    cursor: default;
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 0 1px 2px #606060;
+    -webkit-box-shadow: 0 1px 2px #606060;
+    box-shadow: 0 1px 2px #606060;
+    display: inline-block;
+    background: #D6D6D6;
+    background-image: -moz-linear-gradient(top,#dadada,#ccc);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dadada),color-stop(1,#ccc));
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#dadada',EndColorStr='#cccccc')";
+}
+table.scale-rating a.rate-on
+{
+    padding: 3px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #9DC149;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#B8E055),color-stop(1,#9DC149)) !important;
+    background-image: -moz-linear-gradient(top,#B8E055,#9DC149) !important;
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#B8E055',EndColorStr='#9DC149')";
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+table.scale-rating a.rate-on:hover
+{
+    background: #9DC149;
+}
+a.rate-off:hover
+{
+    background: #D4EF83 !important;
+}
+ul.mc-select
+{
+    padding: 0;
+    margin: 1px 0 0 2px;
+}
+ul.mc-select > li
+{
+    position: relative !important;
+    margin: 0 !important;
+    /*border-bottom: 1px solid #E0E0E0 !important;*/
+    padding: 10px 0 10px 10px !important;
+    font-size: 12px !important;
+    list-style: none !important;
+    cursor: default !important;
+}
+ul.mc-select > li:first-child
+{
+    /*border-top: 1px solid #E0E0E0;*/
+}
+ul.mc-select > li > a
+{
+    display: block;
+    margin: -10px 0 -10px -10px;
+    padding: 12px 10px 12px 25px;
+    text-decoration: none;
+    vertical-align: top;
+    color: inherit;
+    background-position: left center;
+    cursor: default;
+}
+ul.mc-select > li > div > a
+{    
+    margin: -10px 0 -10px -10px;
+    padding: 12px 10px 12px 25px;
+    text-decoration: none;
+    vertical-align: top;
+    color: inherit;
+    background-position: left center;
+    cursor: default;
+    line-height: 2;
+}
+ul.mc-select > li > div > input
+{
+    /*margin: -6px 0 -10px 0px;*/
+    /*display: none;*/
+    height:14px;
+}
+a[single]
+{
+    background-image: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-off.png);
+    background-repeat: no-repeat !important;
+    cursor: default;
+}
+a[single].selected
+{
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png);
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    cursor: default;
+}
+a[multiple]
+{
+    background-image: url(http://wmt.cw.com.tw/SurveyCollector/images/check-off.png);
+    background-repeat: no-repeat !important;
+    cursor: default;
+}
+a[multiple].selected
+{
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/check-on.png);
+    /*background: url(http://wmt.cw.com.tw/SurveyCollector/images/check_1.png);*/
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    cursor: default;
+}
+ul.mc-select > li > a[multiple]:hover
+{
+    /*background: #D4EF83 url(http://wmt.cw.com.tw/SurveyCollector/images/check-off.png);*/
+    /*background-color: #D4EF83;*/
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}
+ul.mc-select > li > a[single]:hover
+{
+    /*background: #D4EF83 url(http://wmt.cw.com.tw/SurveyCollector/images/radio-off.png);*/
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-off.png);
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}
+ul.mc-select > li > div > a[single]:hover
+{
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-off.png);
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}
+a[multiple].selected:hover
+{
+    /*background: #9DC149 url(http://wmt.cw.com.tw/SurveyCollector/images/check-on.png) !important;*/
+    /*background: #9DC149 url(http://wmt.cw.com.tw/SurveyCollector/images/check-on.png) !important;*/
+}
+a[single].selected:hover
+{
+    /*background: #9DC149 url(http://wmt.cw.com.tw/SurveyCollector/images/images/radio-on.png) !important;*/
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/radio-on.png) !important;
+}
+a.tablet:hover
+{
+    background: url(http://wmt.cw.com.tw/SurveyCollector/images/check-off.png) !important;
+}
+.slider
+{
+    background: #dadada;
+    height: 6px;
+    top: 13px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 300px;
+    clear: right;
+    margin-top: 10px;
+    margin-left: 65px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: inset 0 0 8px #ccc;
+}
+.handle
+{
+    background: #9DC149;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#B8E055),color-stop(1,#9DC149)) !important;
+    background-image: -moz-linear-gradient(top,#B8E055,#9DC149) !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#B8E055',EndColorStr='#9DC149')";
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    display: block;
+    top: -9px;
+    margin-top: 1px;
+    border: 1px solid #8DB529;
+    cursor: move;
+    -moz-box-shadow: 0 0 6px #8DB529;
+    -webkit-box-shadow: 0 0 6px #8DB529;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+}
+.range
+{
+    border: 1px inset #ddd;
+    position: relative;
+    top: -4px;
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    padding: 2px 0;
+    text-align: center;
+    width: 46px !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.clear1
+{
+    height: 1px;
+    font-size: 1px;
+    padding: 0;
+    clear: left;
+}
+div.mobosurvey
+{
+    margin: 20px 10px 10px 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.powby
+{
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+}
+.specifybox
+{
+    height: 10px; 
+    width: 80px; 
+    display: list-item;
+    background-color: red;
+    font-size:50px;
+}
+.inline
+{
+    display: inline-block;
+}

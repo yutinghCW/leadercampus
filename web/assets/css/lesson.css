@@ -1,0 +1,707 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "tw-cen-mt";
+  src: url(../fonts/tw-cen-mt.TTF) format("truetype");
+}
+.lessons {
+  width: 100%;
+  float: left;
+}
+.lessons .mbanner {
+  position: relative;
+}
+.lessons .mbanner > a {
+  display: block;
+}
+.lessons .mbanner figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.lessons .mbanner figure:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+}
+.lessons .mbanner figcaption {
+  padding: 45px;
+  z-index: 1;
+  position: relative;
+}
+.lessons .mbanner figcaption p {
+  color: #FFF;
+  text-align: center;
+  margin: 2px 0;
+}
+.lessons .mbanner figcaption p + p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons .sbanner {
+  padding-bottom: 12px;
+  clear: both;
+}
+.lessons .sbanner .azuremediaplayer{
+  margin: 30px auto;
+  width: 100%;
+}
+.lessons .sbanner p {
+  margin: 5px 0;
+  padding: 0 12px;
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.lessons .sbanner p span {
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 20px;
+  float: right;
+}
+.lessons .title {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.lessons .title h5 {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+.lessons .title > div {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.lessons .title > div > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.lessons .title > div > p span {
+  display: block;
+  border: #bfbfbf 1px solid;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 8px;
+}
+
+/* 2020/4/22 新增*/
+.lessons .title > div .additional_purchase_activate{
+	margin-left:20px;
+}
+.lessons .title > div .additional_purchase_activate span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #da000d 1px solid;
+	padding: 5px 8px;
+	color:#ffffff;
+	background-color:#da000d;
+}
+.lessons .title > div .additional_purchase_deactivate{
+	margin-left:20px;
+}
+.lessons .title > div .additional_purchase_deactivate span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #da000d 1px solid;
+	padding: 5px 8px;
+	color:#da000d;
+	background-color:#ffffff;
+}
+.lessons .title > div .normal{
+	margin-left:20px;
+}
+.lessons .title > div .normal span{
+	display: block;
+	font-size:14px;
+	line-height:20px;
+	border: #bfbfbf 1px solid;
+	padding: 5px 8px;
+	color:#bfbfbf;
+	background-color:#ffffff;
+}
+/* 2020/4/22 新增 end*/
+
+.lessons .title > div .info {
+  float: right;
+}
+.lessons .title > div .info span, .lessons .title > div .info a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.lessons .title > div .info span {
+  margin-right: 5px;
+  background: #a0a0a0;
+  color: #FFF;
+  padding: 2px 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons ul.mlesson {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.lessons ul.mlesson li {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  border-top: 1px solid #eee;
+  padding: 12px 0;
+}
+.lessons ul.mlesson li h6 {
+  margin: 5px 0;
+}
+.lessons ul.mlesson li h6 span {
+  float: right;
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 30px;
+}
+.lessons ul.mlesson li p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons ul.mlesson li > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: #eee;
+  color: #000;
+  padding: 2px 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons ul.mlesson li > span a {
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons ul.mlesson li input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 0px;
+  background: #eee;
+  border: none;
+  padding: 3px 5px;
+}
+.lessons ul.mlesson li input::-webkit-input-placeholder {
+  color: #000;
+}
+.lessons ul.mlesson li input::-moz-placeholder {
+  color: #000;
+}
+.lessons ul.mlesson li input:-ms-input-placeholder {
+  color: #000;
+}
+.lessons ul.mlesson li input:-moz-placeholder {
+  color: #000;
+}
+
+.lessons ul.core li {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  padding: 0 0 12px 0;
+}
+.lessons ul.core li > span  {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: #eee;
+  color: #000;
+  padding: 2px 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lessons ul.core li > span a {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.lesson .lesonbar {
+  padding: 12px;
+}
+.lesson .lesonbar a.listen {
+  display: inline-block;
+  border: #bfbfbf 1px solid;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 8px;
+}
+.lesson .lesonbar a.listen:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 18px;
+  height: 13px;
+  background-image: url("../images/listenicon.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.lesson .lesonbar a.fontSize {
+  float: right;
+}
+.lesson .lesonbar a.fontSize img {
+  max-width: 40px;
+}
+.lesson > div:nth-child(2).fzp p:nth-of-type(1) {
+  color: #d70c19;
+}
+
+.lesson .lesonfoot {
+  padding: 12px;
+}
+.lesson .lesonfoot > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lesson .lesonfoot > a:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/askicon.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+}
+.lesson .lesonfoot span {
+  float: right;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lesson .lesonfoot span > a {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.lesson .lesonfoot span img {
+  max-width: 65px;
+}
+
+.fz p, .fz0 p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.fz1 p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.fz2 p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.getscore {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.getscore * {
+  font-size: 14px;
+  line-height: 20px;
+}
+.getscore ul {
+  text-align: center;
+  margin: 12px auto;
+  padding: 12px 0;
+}
+.getscore ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+}
+.getscore ul li img {
+  max-width: 36px;
+}
+.getscore p {
+  text-align: center;
+  padding: 5px auto;
+}
+.getscore .bstar {
+  text-align: center;
+  margin: 0px auto;
+}
+.getscore .bstar img {
+  max-width: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+}
+.getscore .md_score a.slider {
+  display: table;
+  margin: 5px auto;
+  width: auto;
+}
+.getscore .md_score p {
+  padding: 12px 0;
+}
+.getscore .md_score .intro {
+  display: none;
+  background: #eee;
+  padding: 12px 0;
+}
+.getscore .md_score .intro .forms {
+  text-align: center;
+}
+.getscore .md_score .intro .forms a {
+  display: inline-block;
+  margin: 5px;
+  border: #535353 1px solid;
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: #d70c19;
+}
+
+.gotest {
+  margin: 12px 0;
+}
+.gotest p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+}
+.gotest a.rbtn {
+  width: auto;
+  margin: 5px auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.gotest a {
+  display: table;
+  margin: auto;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.gotest span {
+  font-size: 14px;
+  line-height: 20px;
+  display: table;
+  margin: 8px auto;
+  background: #eee;
+  padding: 3px 5px;
+}
+.gotest input.rbtn {
+  width: auto;
+  margin: 5px auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.md_teacher {
+  background: #eee;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  margin: 12px 0;
+}
+.md_teacher .bar {
+  padding: 12px 0;
+}
+.md_teacher .bar b {
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_teacher .bar a {
+  float: right;
+  margin-top: 7px;
+  padding-right: 15px;
+  position: relative;
+}
+.md_teacher .bar a:before, .md_teacher .bar a:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 9px;
+  width: 11px;
+  height: 1px;
+  background: #000;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md_teacher .bar a:after {
+  top: 4px;
+  right: 5px;
+  width: 1px;
+  height: 11px;
+}
+.md_teacher .bar a span {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: top;
+  opacity: 1;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md_teacher .bar a span + span {
+  display: none;
+  opacity: 0;
+}
+.md_teacher .bar a.show span {
+  display: none;
+  opacity: 0;
+}
+.md_teacher .bar a.show span + span {
+  display: inline-block;
+  vertical-align: top;
+  opacity: 1;
+}
+.md_teacher .bar a.show:after {
+  display: none;
+}
+.md_teacher .intro {
+  display: none;
+  position: relative;
+  padding-bottom: 12px;
+}
+.md_teacher .intro figure {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.md_teacher .intro figure img {
+  max-width: 100px;
+}
+.md_teacher .intro figcaption {
+  min-height: 100px;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 115px;
+}
+.md_teacher .intro p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+.md_teacher .intro .forms input {
+  background: #FFF;
+}
+
+.md_translate {
+  margin: 12px 0;
+  border: #bfbfbf 1px solid;
+  padding: 0 12px;
+}
+.md_translate .bar a {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 32px  8px 8px;
+  text-align: center;
+  position: relative;
+}
+.md_translate .bar a:before, .md_translate .bar a:after {
+  position: absolute;
+  content: "";
+  right: 50%;
+  margin-right: -53px;
+  top: 17px;
+  width: 11px;
+  height: 1px;
+  background: #000;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+}
+.md_translate .bar a:after {
+  top: 12px;
+  margin-right: -48px;
+  width: 1px;
+  height: 11px;
+}
+.md_translate .bar a.show:after {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.md_translate .intro {
+  display: none;
+  padding-bottom: 12px;
+}
+.md_translate .intro p, .md_translate .intro b, .md_translate .intro li {
+  font-size: 14px;
+  line-height: 20px;
+}
+.md_translate .intro p {
+  margin-bottom: 5px;
+}
+
+.md_point {
+  padding: 12px;
+}
+.md_point ul li {
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: -11px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.md_point ul li:before {
+  display: inline-block;
+  content: "✓";
+  margin-right: 3px;
+  color: #d70c19;
+}
+
+.md_otherlesn {
+  padding: 12px;
+}
+.md_otherlesn ul li {
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: -9px;
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+.md_otherlesn ul li:before {
+  display: inline-block;
+  content: "";
+  margin-right: 3px;
+  background-image: url(../images/redicon.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 10px;
+}
+
+.coming {
+  padding: 12px;
+  margin: 12px 0;
+}
+.coming span {
+  margin: 0 15px 0 10px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFF;
+  background: #d70c19;
+  position: relative;
+  padding: 0 4px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.coming span:before, .coming span:after {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.coming span:before {
+  left: -10px;
+  border-width: 0 0 20px 10px;
+  border-color: transparent transparent #d70c19 transparent;
+}
+.coming span:after {
+  right: -10px;
+  border-width: 20px 10px 0 0;
+  border-color: #d70c19 transparent transparent transparent;
+}
+
+.anchormenu {
+  display: inline-block;
+  width: 100%;
+}
+.anchormenu ul {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+.anchormenu ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.anchormenu ul li a {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  padding: 2px 5px;
+  border: 1px #eee solid;
+}
+/* 20190827 add course more start*/
+.course_more {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #888;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.course_more_content a .title {
+  background: #da000d;
+  border: 1px solid #da000d;
+  color: #FFF;
+  display: inline-block;
+  line-height: 2;
+  align-items: center;
+  padding: 3px 5px;
+  padding-left: 8px;
+  font-size: 18px;
+  width:95%;
+}
+.course_more_content a .title:hover {
+  background-color: #0000;
+  border: 1px solid #da000d;
+  color: #da000d;
+}
+.course_more_content--pre {
+  float: left;
+  margin-left:5px;
+}
+.course_more_content--next {
+  float: right;
+  text-align: right;
+  margin-right:15px;
+}
+/* 20190827 add course more end*/
