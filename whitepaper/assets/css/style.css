@@ -2925,6 +2925,10 @@ section .edit-area p {
 .visual__background .standard-text .h3 span {
   display: block;
 }
+.visual__background .standard-text img {
+  margin-left: auto;
+  margin-right: auto;
+}
 .visual__background .standard-text img.desktop {
   width: 850px;
 }
