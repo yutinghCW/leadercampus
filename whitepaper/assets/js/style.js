@@ -69,7 +69,6 @@ $(function () {
 	$(".btn--logo").click(function() {
         var logoName = $(this).data('name'),
 			logo = "";
-			console.log(logoName);
         for (var i = 0; i < study.length; i++) {
             if (logoName == study[i]["logoName"]) {
                 logo += '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon-cancel"></i></button><div class="model-basic model-basic-spc"><div class="model-img"><img src="assets/images/' + study[i]["logoImg"];
