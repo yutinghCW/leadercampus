@@ -30,7 +30,7 @@ $(function () {
 		offset: height/2,
 	});
 	$(".slick-center").slick({
-		centerMode: false,
+		centerMode: true,
 		slidesToShow: 5,
 		responsive: [
 			{

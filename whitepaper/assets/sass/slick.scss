@@ -34,7 +34,6 @@
 		}
 	}
 }
-
 .slick-list {
 	position: relative;
 	display: block;
@@ -49,12 +48,10 @@
 		cursor: hand;
 	}
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list {
 	@include translate3d(0, 0, 0);
 }
-
 .slick-track {
 	position: relative;
 	top: 0;
@@ -93,10 +90,8 @@
 	display: block;
 	padding-left: 10px;
 	padding-right: 10px;
+	@include opacity(0.5);
 	@include transition(transform 0.3s, opacity 0.3s);
-	@include breakpoint(max-width 1199px) {
-		@include opacity(0.5);
-	}
 	&.slick-current {
 		@include opacity(1);
 		~ .slick-slide {
@@ -114,17 +109,13 @@
 	.slick-img {
 		position: relative;
 		transform-origin: left center;
-		@include breakpoint(max-width 1199px) {
-			@include scale(0.925);
-		}
+		@include scale(0.925);
 	}
 	.slick-text {
+		@include opacity(0);
 		@include breakpoint(1200px) {
 			padding-left: 20px;
 			padding-right: 20px;
-		}
-		@include breakpoint(max-width 1199px) {
-			@include opacity(0);
 		}
 	}
 }
@@ -166,7 +157,7 @@
 		font-size: 1.5rem;
 		@include breakpoint(1024px) {
 			font-size: 2.25rem;
-		}	
+		}
 	}
 	&.slick-hidden {
 		display: none;
@@ -174,7 +165,7 @@
 	&.slick-prev {
 		@include breakpoint(max-width 1023px) {
 			right: calc(100% + 20px);
-		}	
+		}
 		@include breakpoint(1024px) {
 			left: 33.3333%;
 			@include translateX(-100%);
@@ -189,7 +180,7 @@
 	&.slick-next {
 		@include breakpoint(max-width 1023px) {
 			left: calc(100% + 20px);
-		}	
+		}
 		@include breakpoint(1024px) {
 			right: 33.3333%;
 			@include translateX(100%);

@@ -99,16 +99,12 @@
   display: block;
   padding-left: 10px;
   padding-right: 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   -o-transition: -o-transform 0.3s, opacity 0.3s;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
-}
-@media (max-width: 1199px) {
-  .slick-initialized .slick-slide {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-  }
 }
 .slick-initialized .slick-slide.slick-current {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -130,25 +126,19 @@
 .slick-initialized .slick-slide .slick-img {
   position: relative;
   transform-origin: left center;
+  -moz-transform: scale(0.925, 0.925);
+  -ms-transform: scale(0.925, 0.925);
+  -webkit-transform: scale(0.925, 0.925);
+  transform: scale(0.925, 0.925);
 }
-@media (max-width: 1199px) {
-  .slick-initialized .slick-slide .slick-img {
-    -moz-transform: scale(0.925, 0.925);
-    -ms-transform: scale(0.925, 0.925);
-    -webkit-transform: scale(0.925, 0.925);
-    transform: scale(0.925, 0.925);
-  }
+.slick-initialized .slick-slide .slick-text {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 @media (min-width: 1200px) {
   .slick-initialized .slick-slide .slick-text {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-@media (max-width: 1199px) {
-  .slick-initialized .slick-slide .slick-text {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
   }
 }
 
