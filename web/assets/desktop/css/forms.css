@@ -139,10 +139,11 @@ textarea {
 }
 .mymember .in {
   position: relative;
-  width: 47.91667%;
-  float: left;
+  /* width: 47.91667%;
+  float: left; */
   margin-left: 1.04167%;
   margin-right: 1.04167%;
+  margin-bottom: 15px;
 }
 /*新增*/
 .mymember .datepicker {
@@ -177,10 +178,13 @@ textarea {
   display: inline-block;
   vertical-align: middle;
 }
+.mymember .in figure > * {
+  display: inline-block;
+  vertical-align: middle;
+}
 .mymember .in figure img {
-  max-width: 65px;
+  width: 40px;
   border-radius: 50%;
-  border: 3px solid #000;
   box-sizing: border-box;
   margin: auto;
 }
@@ -195,31 +199,40 @@ textarea {
 .mymember .in figcaption .my {
   font-size: 26px;
   line-height: 30px;
-  margin: 0 15px;
-  text-align: center;
+  margin: 0 5px;
+  /* margin: 0 15px;
+  text-align: center; */
 }
 .mymember .in figcaption .my a {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   background: #eee;
   padding: 0px 15px;
   border-radius: 20px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .mymember .in figcaption .my a:hover {
   background: #bfbfbf;
 }
-.mymember .in figcaption .info p, .mymember .in figcaption .info span {
+.mymember .purview .info p,
+.mymember .purview .info span {
   color: #727272;
 }
 .mymember .purview {
-  width: 47.91667%;
-  float: left;
+  /* width: 47.91667%;
+  float: left; */
   margin-left: 1.04167%;
   margin-right: 1.04167%;
+  font-size: 0;
+}
+.mymember .purview > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
 }
 .mymember .purview ul li {
-  width: 47.91667%;
-  float: left;
+  /* width: 47.91667%;
+  float: left; */
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
