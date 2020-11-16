@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_video</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="換icon" transform="translate(-1147.000000, -1163.000000)">
+            <g id="icon_video" transform="translate(1147.000000, 1163.000000)">
+                <rect id="Rectangle" opacity="0.511323475" x="0" y="0" width="22" height="22"></rect>
+                <rect id="Rectangle" stroke="#898989" stroke-width="0.741418764" x="1.37070938" y="3.37070938" width="19.0297483" height="14.9107551"></rect>
+                <path d="M8.92890895,8.52988908 L12.8867863,10.8272148 L8.92890895,13.1245405 L8.92890895,8.52988908 Z M8.38841223,14.0722423 C8.49988968,14.1376279 8.63726593,14.1376279 8.74874338,14.0722423 L13.7933795,11.1438475 C13.9661133,11.0434585 14.0260183,10.8198481 13.9271975,10.6443274 C13.8953082,10.587727 13.8491408,10.5407812 13.7933795,10.5083858 L8.74874338,7.57999101 C8.576415,7.47891564 8.35602746,7.53890197 8.25653102,7.71396508 C8.22459668,7.77015365 8.20793136,7.83393775 8.20823799,7.89882 L8.20823799,13.7556096 C8.20838177,13.8862435 8.27702486,14.0069025 8.38841223,14.0722423 L8.38841223,14.0722423 Z" id="Fill-4" fill="#898989" fill-rule="nonzero"></path>
+                <line x1="4.50114416" y1="18.0451644" x2="4.50114416" y2="3.60700951" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="4.50114416" y1="6.67734554" x2="1.61784897" y2="6.67734554" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="4.50114416" y1="10.8" x2="1.61784897" y2="10.8" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="4.50114416" y1="14.9748284" x2="1.61784897" y2="14.9748284" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="20.1533181" y1="6.67734554" x2="17.2700229" y2="6.67734554" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="20.1533181" y1="10.8" x2="17.2700229" y2="10.8" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="20.1533181" y1="14.9748284" x2="17.2700229" y2="14.9748284" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+                <line x1="17.2700229" y1="18.0451644" x2="17.2700229" y2="3.60700951" id="Line-3" stroke="#898989" stroke-width="0.741418764" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

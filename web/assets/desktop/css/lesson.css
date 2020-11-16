@@ -89,6 +89,9 @@
 	border: #bfbfbf 1px solid;
 	padding: 5px 8px;
 }
+.lessons .title > div > p span.highlight {
+	color: #da000d;
+}
 
 /* 2020/4/22 新增*/
 .lessons .title > div .additional_purchase_activate{
@@ -141,6 +144,12 @@
 	background: #a0a0a0;
 	color: #FFF;
 	padding: 2px 5px;
+}
+.lessons .description {
+	border-top: 1px solid #eee;
+}
+.lessons .description > p {
+	margin-top: 20px;
 }
 .lessons ul.mlesson li {
 	border-top: 1px solid #eee;

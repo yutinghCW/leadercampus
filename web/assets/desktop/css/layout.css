@@ -145,8 +145,10 @@ h3 a:hover, h3 span a:hover,
 	opacity: 1;
 }
 header {
+	position: relative;
 	width: 100%;
 	box-sizing: border-box;
+	z-index: 1;
 }
 header .header_content {
 	width: 1200px;
@@ -165,14 +167,16 @@ header .srhblock {
 	width: 550px;
 }
 header .srhblock > p {
-	padding: 3px 0;
+    padding: 3px 0 3px 6.125rem;
 	background: #FFF;
 	font-size: 0;
+    text-indent: -6.125rem;
     line-height: normal;
 }
 header .srhblock > p > * {
 	font-size: 0.875rem;
 	line-height: 20px;
+	text-indent: 0;
 }
 header .srhblock > p span {
 	display: table;
@@ -235,10 +239,7 @@ header .member .in figure {
 	vertical-align: middle;
 }
 header .member .in figure img {
-	max-width: 14px;
-	border-radius: 50%;
-	padding: 2px;
-	border: 2.5px solid #000;
+	width: 24px;
 }
 header .member .in figcaption {
 	display: inline-block;
@@ -253,8 +254,64 @@ header .member .in figcaption div a:hover {
 	opacity: 0.8;
 }
 header .member .in figcaption span {
+	position: relative;
 	display: inline-block;
 	vertical-align: bottom;
+}
+header .member .in figcaption span figure {
+	position: absolute;
+	top: calc(100% + 0.5em);
+	right: -40px;
+	display: flex;
+	min-height: 60px;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 15px;
+	color: #fff;
+	font-size: 1.125rem;
+	background-color: #434343;
+    word-break: keep-all;
+    box-sizing: border-box;
+}
+header .member .in figcaption span figure::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 100%;
+	right: 60px;
+	border-style: solid;
+	border-width: 0 8px 8px 8px;
+	border-color: transparent transparent #434343 transparent;
+}
+header .member .in figcaption span figure i.figure-close {
+	position: relative;
+	display: block;
+	width: 18px;
+	height: 18px;
+    margin-left: 10px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+header .member .in figcaption span figure i.figure-close::before,
+header .member .in figcaption span figure i.figure-close::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+}
+header .member .in figcaption span figure i.figure-close::before {
+	width: 18px;
+	height: 2px;
+}
+header .member .in figcaption span figure i.figure-close::after {
+	width: 2px;
+	height: 18px;
 }
 header .member .in figcaption span a {
 	font-size: 14px;
@@ -310,9 +367,17 @@ header .login > ul li.loginbtn a:before {
 	color: #b5b5b5;
 	margin: auto 2px;
 	height: 30px;
+	padding: 0px 20px 0px 10px;
+	background-image: url('../images/svg/menuicon_gray.svg');
+	background-repeat: no-repeat;
+	background-position: calc(100% - 6px) calc(50% + 1px);
+	background-color: transparent;
+	-moz-appearance: none; 
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
 	border-radius: 1.5em;
 	border: 1px solid #b5b5b5;
-	padding: 0px 15px 0px 10px;
 }
 .srhinput input {
 	outline: none;
@@ -330,28 +395,32 @@ header .login > ul li.loginbtn a:before {
 	height: 30px;
 }
 .srhinput input::-webkit-input-placeholder {
-	background: url(../images/srhicon.png) 280px center no-repeat;
+	background: url(../images/svg/search.svg) 283px center no-repeat;
+	background-size: 1.125rem;
 	font-size: 14px;
 	line-height: 30px;
 	padding: 0px 15px 0px 10px;
 	color: #a0a0a0;
 }
 .srhinput input::-moz-placeholder {
-	background: url(../images/srhicon.png) 290px center no-repeat;
+	background: url(../images/svg/search.svg) 293px center no-repeat;
+	background-size: 1.125rem;
 	font-size: 14px;
 	line-height: 30px;
 	padding: 0px 15px 0px 10px;
 	color: #a0a0a0;
 }
 .srhinput input:-ms-input-placeholder {
-	background: url(../images/srhicon.png) 290px center no-repeat;
+	background: url(../images/svg/search.svg) 293px center no-repeat;
+	background-size: 1.125rem;
 	font-size: 14px;
 	line-height: 30px;
 	padding: 0px 15px 0px 10px;
 	color: #a0a0a0;
 }
 .srhinput input:-moz-placeholder {
-	background: url(../images/srhicon.png) 280px center no-repeat;
+	background: url(../images/svg/search.svg) 283px center no-repeat;
+	background-size: 1.125rem;
 	font-size: 14px;
 	line-height: 30px;
 	padding: 0px 15px 0px 10px;
@@ -415,11 +484,11 @@ nav .mainmenu > li > a.first:after {
 	position: absolute;
 	display: block;
 	content: "";
-	background: url(../images/menuicon.png) center center no-repeat;
+	background: url(../images/svg/menuicon_gray.svg) center center no-repeat;
 	width: 8px;
 	height: 5px;
 	left: 50%;
-	margin-left: 4px;
+	margin-left: -4px;
 	bottom: 10px;
 }
 nav .mainmenu > li:hover .secondmenu {
@@ -478,7 +547,7 @@ nav.loginnav .mainmenu.loginmenu > li > a {
 	color: #da000d;
 }
 nav.loginnav .mainmenu.loginmenu > li > a.first:after {
-	background: url(../images/menuiconr.png) center center no-repeat;
+	background: url(../images/svg/menuicon_red.svg) center center no-repeat;
 }
 nav.loginnav .mainmenu.loginmenu > li .secondmenu {
 	background: #da000d;
@@ -534,7 +603,7 @@ nav.loginnav .mainmenu.loginmenu > li .secondmenu a {
 .th_com h1 > a:after, .index h2 > a:after, .lesson h2 > a:after, .lectures h2 > a:after {
 	display: inline-block;
 	content: "";
-	background: url(../images/moreicon.png) center center no-repeat;
+	background: url(../images/svg/moreicon_black.svg) center center no-repeat;
 	background-size: cover;
 	width: 6px;
 	height: 12px;
@@ -738,12 +807,13 @@ h1.title span a:hover, h2.title span a:hover {
 .md_lesson div > a span {
 	display: inline-block;
 	vertical-align: middle;
-	background: url(../images/moreiconw.png) center center no-repeat;
+	background: url(../images/svg/moreicon_white.svg) center center no-repeat;
 	width: 6px;
 	height: 12px;
 	background-size: cover;
 	text-indent: -9999px;
-	margin-top: -4px;
+	margin-top: -3px;
+	margin-left: 3px;
 }
 .md_tmenu {
 	margin-top: 12px;
@@ -1724,17 +1794,21 @@ h1.title span a:hover, h2.title span a:hover {
 	display: inline-block;
 	vertical-align: middle;
 }
+.course_type img {
+	display: inline-block;
+	vertical-align: middle;
+}
 a.favorite {
 	display: block;
 	width: 31px;
 	height: 27px;
-	background-image: url(../images/favorite.png);
-	background-size: 100%;
+	background-image: url(../images/svg/favorite.svg);
+	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
 a.favorite.on {
-	background-image: url(../images/favoriteon.png);
+	background-image: url(../images/svg/favoriteon.svg);
 }
 .sentences {
 	margin: 15px auto;
@@ -2558,4 +2632,46 @@ header .cookiebar {
 }
 .amp-default-skin *::before, .amp-default-skin *::after{
 	color:#fff;
+}
+
+table.roomList {
+	margin-bottom: 0.75rem;
+}
+table.roomList * {
+	font-size: 1.125rem;
+    line-height: 1.25;
+}
+table.roomList a {
+    display: block;
+}
+table.roomList thead {
+	background-color: #eee;
+}
+table.roomList tr {
+	border-bottom: 1px solid #eee;
+}
+table.roomList tr th:first-child,
+table.roomList tr td:first-child {
+	width: 60%;
+	padding-left: 30px;
+}
+table.roomList tr th:nth-child(2),
+table.roomList tr td:nth-child(2) {
+	width: 28.5%;
+}
+table.roomList tr th:last-child,
+table.roomList tr td:last-child {
+	width: 11.5%;
+	padding-right: 30px;
+}
+table.roomList tr th {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+table.roomList tr td {
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+table.roomList tr td.highlight {
+	color: #da000d;
 }

@@ -175,7 +175,7 @@ header .header_content h1 {
 header .header_content h1 a img {
   max-width: 80%;
   max-height: 40px;
-  margin: auto;
+  /* margin: auto; */
 }
 header .srhblock {
   display: none;
@@ -213,6 +213,67 @@ header .srhblock > a {
   line-height: 30px;
   text-align: right;
   padding: 15px;
+}
+
+header .header_content > figure {
+	position: absolute;
+	top: 100%;
+	right: 5px;
+  width: calc(13em + 70px);
+	padding: 20px 40px 20px 20px;
+	color: #fff;
+	font-size: 1.125rem;
+  text-align: left;
+  background-color: #434343;
+  box-sizing: border-box;
+}
+header .header_content > figure::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 100%;
+	right: 15px;
+	border-style: solid;
+	border-width: 0 8px 8px 8px;
+	border-color: transparent transparent #434343 transparent;
+}
+header .header_content > figure i.figure-close {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+header .header_content > figure i.figure-close::before,
+header .header_content > figure i.figure-close::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+}
+header .header_content > figure i.figure-close::before {
+	width: 18px;
+	height: 2px;
+}
+header .header_content > figure i.figure-close::after {
+	width: 2px;
+	height: 18px;
+}
+header .header_content > figure a {
+  display: inline-block;
+  padding: 2px 27px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
 }
 
 .sover {
@@ -304,9 +365,10 @@ nav {
 
 #srhbtn, #heartbtn {
   position: absolute;
-  top: 12px;
+  top: 50%;
   right: 55px;
   width: 25px;
+  transform: translateY(-50%);
 }
 
 #heartbtn {
@@ -315,8 +377,8 @@ nav {
 
 #smenu {
   position: absolute;
+  top: 9px;
   left: 10px;
-  top: 10px;
   padding: 12px 10px;
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -434,10 +496,10 @@ nav .member .in figure {
   position: absolute;
   left: 10px;
   top: 50%;
-  margin-top: -26px;
+  margin-top: -23px;
 }
 nav .member .in figure img {
-  max-width: 46px;
+  width: 46px;
   border-radius: 50%;
   border: 2.5px solid #000;
   box-sizing: border-box;
@@ -445,6 +507,7 @@ nav .member .in figure img {
 nav .member .in figcaption {
   position: relative;
   padding-left: 52px;
+  min-height: 46px;
 }
 nav .member .in figcaption div {
   font-size: 18px;
@@ -1336,17 +1399,23 @@ h3.title span a {
   max-width: 13px;
 }
 
+.course_type img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 18px;
+}
+
 a.favorite {
   display: block;
   width: 23px;
   height: 21px;
-  background-image: url(../images/favorite.png);
-  background-size: 100%;
+  background-image: url(../images/svg/favorite.svg);
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 a.favorite.on {
-  background-image: url(../images/favoriteon.png);
+  background-image: url(../images/svg/favoriteon.svg);
 }
 
 .sentences {
@@ -2170,4 +2239,48 @@ header .cookiebar__action > .button:hover {
 .cookies-info-page .container-privacy {
 	max-width: 1000px;
 	margin: 0px auto;
+}
+
+table.roomList * {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+table.roomList a {
+  display: block;
+	font-size: 1.125rem;
+}
+table.roomList thead {
+	background-color: #eee;
+}
+table.roomList tr {
+	border-bottom: 1px solid #eee;
+}
+table.roomList tr th:first-child,
+table.roomList tr td:first-child {
+	width: calc(100% - 12rem - 30px);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+table.roomList tr th:nth-child(2),
+table.roomList tr td:nth-child(2) {
+	width: 8rem;
+}
+table.roomList tr th:last-child,
+table.roomList tr td:last-child {
+	width: calc(4rem + 10px);
+	padding-right: 10px;
+}
+table.roomList tr th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+table.roomList tr td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+table.roomList tr td.highlight {
+	color: #da000d;
+}
+table.roomList + .morelesson {
+  margin: 15px auto 30px;
 }
