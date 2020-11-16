@@ -164,7 +164,7 @@ header .header_content > a {
 header .srhblock {
 	display: inline-block;
 	vertical-align: middle;
-	width: 550px;
+	width: 500px;
 }
 header .srhblock > p {
     padding: 3px 0 3px 6.125rem;
