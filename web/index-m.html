@@ -103,10 +103,12 @@
                 <a id="heartbtn" href="https://www.leadercampus.com.tw/member/favorite/course-set">
                     <img src="assets/images/svg/learn.svg" alt="我的收藏">
                 </a>
+                <!-- 201118-配課機制-start -->
                 <figure>
                     您有指定學習班級尚未通過！<i class="figure-close"></i>
                     <a href="room-m.html">立即學習</a>
                 </figure>
+                <!-- 201118-配課機制-end -->
             </div>
             <nav>
                 <div class="member">
@@ -983,6 +985,7 @@
                     var target = $(element)
                     target.css({ height: target.children("li").outerHeight(true) })
                 });
+                // 201118-配課機制
                 $('.figure-close').each(function(){
                     $(this).click(function(){
                         $(this).parent('figure').fadeOut();
