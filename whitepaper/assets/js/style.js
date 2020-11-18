@@ -32,11 +32,13 @@ $(function () {
 	$(".slick-center").slick({
 		centerMode: true,
 		slidesToShow: 5,
+		centerPadding: '0',
 		responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
 					centerMode: true,
+					centerPadding: '0',
 					slidesToShow: 3,
 				},
 			},
@@ -44,6 +46,7 @@ $(function () {
 				breakpoint: 1024,
 				settings: {
 					centerMode: true,
+					centerPadding: '0',
 					slidesToShow: 1,
 				},
 			},

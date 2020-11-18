@@ -18,7 +18,7 @@ var data = [
 		speakerName: "黃 男州",
 		speakerNameEng: "Joseph Huang",
 		speakerInfo: "玉山銀行董事長",
-		speakerIntro: "專長經營管理、策略規劃、金融創新，優異表現榮獲多項肯定「清大傑出校友」、「The Asset 亞洲最佳 CEO」、「The Asian Banker 亞太區年度領袖獎」，除了帶領玉山各項業務快速發展，更在 ESG 方面帶領玉山金控入選 DJSI「道瓊永續世界指數」成份股，創下台灣金融業有史以來最佳紀錄。",
+		speakerIntro: "專長經營管理、策略規劃、金融創新，領導玉山深耕台灣、布局亞洲，致力打造綜合績效最好，也最被尊敬的銀行。近年帶領玉山多次榮獲「台灣最佳銀行」大獎，連續 7 年入選 DJSI「道瓊永續指數」，創下台灣金融業最佳紀錄。個人並榮膺《亞洲銀行家》「亞太最佳 CEO」、3度蟬聯《財資雜誌》「亞洲最佳 CEO」、《機構投資人雜誌》「台灣最佳 CEO」等肯定。",
 	},
 	{
 		speakerImg: "speaker-03_yeh.jpg",
