@@ -39,7 +39,14 @@ var data = [
 		speakerName: "吳 建宏",
 		speakerNameEng: "Hong Wu",
 		speakerInfo: "台灣數位企業總會理事長",
-		speakerIntro: "吳建宏 (Hong Wu) 是台灣 IBM 企業諮詢服務事業群總經理，負責行業顧問服務的策略、規劃、與執行，從事顧問服務工作已經超過18年，擅長策略規劃、數位科技、設計思考、敏捷創新、認知自動化、雲端科技等領域。<br/><br/>其領導的 Bank 4.0 數位金融團隊，協助國內領先金融機構進行數位轉型規劃、全通路客戶體驗設計、API 平台經濟、區塊鏈生態圈、大數據資料架構、人工智慧自動化、核心現代化、雲端轉型藍圖規劃、反洗錢建置…等。<br/><br/>曾榮獲 Best of IBM 及多次 IBM Taiwan Value Role Model 的榮譽，其專業顧問服務深獲客戶與公司肯定。同時擁有美國賓州州立大學企業管理碩士  (MBA, Pennsylvania State University)以及國立中央大學資訊管理學系學位 (BA, Information Management, National Central University)。",
+		speakerIntro: "吳建宏 (Hong Wu) 是台灣 IBM 企業諮詢服務事業群總經理，負責行業顧問服務的策略、規劃、與執行，從事顧問服務工作已經超過 18 年，擅長策略規劃、數位科技、設計思考、敏捷創新、認知自動化、雲端科技等領域。<br/><br/>其領導的 Bank 4.0 數位金融團隊，協助國內領先金融機構進行數位轉型規劃、全通路客戶體驗設計、API 平台經濟、區塊鏈生態圈、大數據資料架構、人工智慧自動化、核心現代化、雲端轉型藍圖規劃、反洗錢建置…等。<br/><br/>曾榮獲 Best of IBM 及多次 IBM Taiwan Value Role Model 的榮譽，其專業顧問服務深獲客戶與公司肯定。同時擁有美國賓州州立大學企業管理碩士 (MBA, Pennsylvania State University) 以及國立中央大學資訊管理學系學位 (BA, Information Management, National Central University)。",
+	},
+	{
+		speakerImg: "speaker-07_shan.jpg",
+		speakerName: "單 嘉露",
+		speakerNameEng: "Jialu Shan",
+		speakerInfo: "IMD 全球商業數位轉型中心高級研究員",
+		speakerIntro: "嘉露的研究領域包括組織數位轉型，商業模式創新及公司治理實踐。特別關注亞洲市場的技術創新和模式創新。她的見解與研究成果廣泛發表於世界 A 類學術期刊（如 MIT Sloan Management Review, MIS Quarterly Executive, Industrial Marketing Management 等）以及主流新聞媒體（如福布斯，CNBC 等）。嘉露於 2012 年在洛桑高等商學院（HEC Lausanne）取得經濟學（管理）博士學位。曾任教於瑞士凱撒里茲酒店管理大學。",
 	}
 ];
 var study = [
