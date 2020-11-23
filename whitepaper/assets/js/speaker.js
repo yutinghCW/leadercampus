@@ -47,6 +47,13 @@ var data = [
 		speakerNameEng: "Jialu Shan",
 		speakerInfo: "IMD 全球商業數位轉型中心高級研究員",
 		speakerIntro: "嘉露的研究領域包括組織數位轉型，商業模式創新及公司治理實踐。特別關注亞洲市場的技術創新和模式創新。她的見解與研究成果廣泛發表於世界 A 類學術期刊（如 MIT Sloan Management Review, MIS Quarterly Executive, Industrial Marketing Management 等）以及主流新聞媒體（如福布斯，CNBC 等）。嘉露於 2012 年在洛桑高等商學院（HEC Lausanne）取得經濟學（管理）博士學位。曾任教於瑞士凱撒里茲酒店管理大學。",
+	},
+	{
+		speakerImg: "speaker-08_hsieh.jpg",
+		speakerName: "謝 健南",
+		speakerNameEng: "James Hsieh",
+		speakerInfo: "全聯實業股份有限公司副董事長",
+		speakerIntro: "中原大學企管系畢業，曾任統一超商營運長、博客來網路書店總經理 、85 度 C 總經理。2016 年出任全聯福利中心執行長，具創新力，精通系統佈建、物流配送與生鮮控管等領域。",
 	}
 ];
 var study = [
