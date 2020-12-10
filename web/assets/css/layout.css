@@ -219,6 +219,7 @@ header .header_content > figure {
 	position: absolute;
 	top: 100%;
 	right: 5px;
+  display: none;
   width: calc(13em + 70px);
 	padding: 20px 40px 20px 20px;
 	color: #fff;

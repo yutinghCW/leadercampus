@@ -262,12 +262,11 @@ header .member .in figcaption span figure {
 	position: absolute;
 	top: calc(100% + 0.5em);
 	right: -40px;
-	display: flex;
+	display: none;
+	min-width: calc(13em + 35px + 30px);
 	min-height: 60px;
-	align-items: center;
-	justify-content: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	padding-left: 20px;
 	padding-right: 15px;
 	color: #fff;
@@ -288,11 +287,12 @@ header .member .in figcaption span figure::before {
 }
 header .member .in figcaption span figure i.figure-close {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: 18px;
 	height: 18px;
     margin-left: 10px;
 	transform: rotate(45deg);
+	vertical-align: middle;
 	cursor: pointer;
 }
 header .member .in figcaption span figure i.figure-close::before,
@@ -450,21 +450,29 @@ header .login > ul li.loginbtn a:before {
 	padding: 0px 15px 0px 10px;
 }
 main {
+	position: relative;
 	min-width: 1200px;
 	margin: auto;
+	z-index: 0;
 }
 main .main_content {
 	min-height: 500px;
 	margin-bottom: 20px;
 }
 nav {
+	position: relative;
 	width: 1200px;
 	text-align: center;
 	margin: auto;
+	font-size: 0;
 	border-bottom: #e6e6e6 1px solid;
+	z-index: 1;
 }
 nav a {
 	display: block;
+}
+nav > ul {
+	font-size: 0;
 }
 nav .mainmenu {
 	display: inline-block;
