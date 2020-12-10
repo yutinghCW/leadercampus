@@ -750,13 +750,13 @@ h1.title span a:hover, h2.title span a:hover {
 	left: 0px;
 }
 .md_slideShow .pt_prev:after {
-	background-image: url(../images/prev.png);
+	background-image: url(../images/svg/prev.svg);
 }
 .md_slideShow .pt_next {
 	right: 0px;
 }
 .md_slideShow .pt_next:after {
-	background-image: url(../images/next.png);
+	background-image: url(../images/svg/next.svg);
 }
 .md_slideShow:hover .pt_prev, .md_slideShow:hover .pt_next {
 	opacity: 0.8;
