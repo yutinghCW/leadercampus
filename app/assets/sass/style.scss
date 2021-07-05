@@ -25,12 +25,10 @@ html, body {
 	color: rgb(76, 76, 76);
 	font-family: "notosanshant_light";
 	font-weight: normal;
-	font-size: 0.875rem;
-	line-height: 1.5;
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
-	// -webkit-text-size-adjust: 100%;
-	// text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 	// text-rendering: optimizeLegibility;
 }
 
@@ -40,6 +38,11 @@ html, body {
     @include box-sizing(border-box);
 }
 
+body {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
 a {
 	color: rgb(255,98, 43);
 }
@@ -47,15 +50,6 @@ a {
 h1, h2, h3, h4, h5, h6, b, strong {
     font-family: "notosanshant_bold";
     font-weight: normal;
-    &.v1 {
-    	font-family: "notosanshant_regular";
-    }
-    &.v2 {
-    	font-family: "notosanshant_medium";
-    }
-    &.v3 {
-    	font-family: "notosanshant_bold";
-    }
 }
 
 p, ul, ol {
