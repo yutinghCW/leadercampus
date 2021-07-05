@@ -5,6 +5,16 @@
 }
 
 @font-face {
+    font-family: "notosanshant_regular";
+    src: local("notosanshant_regular"), url("notosanshant_regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "notosanshant_medium";
+    src: local("notosanshant_medium"), url("notosanshant_medium.otf") format("opentype");
+}
+
+@font-face {
     font-family: "notosanshant_bold";
     src: local("notosanshant_bold"), url("notosanshant_bold.otf") format("opentype");
 }
@@ -37,6 +47,15 @@ a {
 h1, h2, h3, h4, h5, h6, b, strong {
     font-family: "notosanshant_bold";
     font-weight: normal;
+    &.v1 {
+    	font-family: "notosanshant_regular";
+    }
+    &.v2 {
+    	font-family: "notosanshant_medium";
+    }
+    &.v3 {
+    	font-family: "notosanshant_bold";
+    }
 }
 
 p, ul, ol {
