@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "notosanshant_light";
+  src: local("notosanshant_light"), url("notosanshant_light.otf") format("opentype");
+}
+@font-face {
+  font-family: "notosanshant_bold";
+  src: local("notosanshant_bold"), url("notosanshant_bold.otf") format("opentype");
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #4c4c4c;
+  font-family: "notosanshant_light";
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ff622b;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-family: "notosanshant_bold";
+  font-weight: normal;
+}
+
+p, ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+img {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */
